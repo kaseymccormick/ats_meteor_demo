@@ -1,0 +1,11 @@
+/* CSS declarations go here */
+.green-bk{
+    background-color:#339933;
+}
+.floatR{
+    float:right;
+}
+.custom-restricted-width{
+    display: inline-block;
+    width:20%;
+}
