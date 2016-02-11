@@ -2,6 +2,9 @@
 .green-bk{
     background-color:#339933;
 }
+.clear{
+    clear:both;
+}
 .floatR{
     float:right;
 }
