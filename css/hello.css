@@ -1,4 +1,11 @@
 /* CSS declarations go here */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 .green-bk{
     background-color:#339933;
 }
@@ -8,6 +15,32 @@
 .floatR{
     float:right;
 }
+.floatL{
+    float:right;
+}
 .custom-restricted-width{
     display: inline-block;
+    width: 220px;
+    padding:0px 20px;
+}
+#logo {
+    width: 100px;
+    height: auto;
+    margin: 0px;
+}
+.navigation-left-bar{
+    border-right: solid 1px #339933;
+
+}
+.navigation-left-bar__apps .pure-menu-item{
+    padding:10px 0px;
+    border-bottom:solid 1px #339933;
+
+}
+.list__no-style__float-left {
+    list-style-type: none;
+}
+.list__no-style__float-left li{
+    float:left;
+
 }
