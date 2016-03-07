@@ -14,8 +14,17 @@ if (Meteor.isClient) {
       Session.set('counter', Session.get('counter') + 1);
     }
   });
+  Template.addPlayerForm.events({
+  'submit form': function(){
+    eevent.preventDefault();
+    var playerNameVar = event.target.playerName.value;
+    PlayersList.insert({
+      name: playerNameVar,
+      score: 0
+    });
+  }
+  });
 }
-
 if (Meteor.isServer) {
   Meteor.startup(function () {
     // code to run on server at startup
