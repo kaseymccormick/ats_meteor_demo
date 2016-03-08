@@ -5,9 +5,6 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{
-    display:inline-block;
-}
 
 .green-bk{
     background-color:#339933;
@@ -38,8 +35,8 @@ html {
 .navigation-left-bar__apps .pure-menu-item{
     padding:10px 0px;
     border-bottom:solid 1px #339933;
-
 }
+
 .list__no-style__float-left {
     list-style-type: none;
 }

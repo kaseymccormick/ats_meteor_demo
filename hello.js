@@ -14,7 +14,7 @@ if (Meteor.isClient) {
       Session.set('counter', Session.get('counter') + 1);
     }
   });
-  Template.addPlayerForm.events({
+  Template.vendor-management.events({
   'submit form': function(){
     eevent.preventDefault();
     var playerNameVar = event.target.playerName.value;
