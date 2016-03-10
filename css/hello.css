@@ -81,7 +81,6 @@ h4{
     box-shadow: 4px 52px 4px -4px rgba(204,204,204,1);
     position: fixed;
     height:800px;
-    margin-top:-55px;
     background-color:white;
     z-index: 9999;
 }
