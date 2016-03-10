@@ -5,6 +5,9 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+p{
+    font-size: 12px;
+}
 .button-xsmall{
     font-size: 70%;
 }
@@ -89,7 +92,10 @@ h4{
     padding:10px 0px;
     border-bottom:solid 1px #339933;
 }
-
+.navigation-left-bar a:hover{
+    color: #339933;
+    background-color: white;
+}
 .list__no-style__float-left {
     list-style-type: none;
 }
@@ -103,6 +109,9 @@ h4{
     width: 150px;
     line-height: 1.5em;
 }
+/*----------------------------------------------
+address book
+----------------------------------------------*/
 .addressbook__row{
     margin: 20px 0px;
 }
@@ -153,4 +162,56 @@ h4{
     float:left;
     font-style: italic;
     color:#0000ed;
+}
+/*----------------------------------------------
+address book individual profile
+----------------------------------------------*/
+.line-under{
+    border-bottom:1px solid #9C9B9B;
+    margin-bottom: 10px;
+}
+.pure-u-1-1.picture-list__image{
+    margin-top:20px;
+    border:solid 1px #888888;
+    border-radius:5px;
+}
+.pure-u-1-1.picture-list__image img {
+    width: 100%;
+    padding: 3px;
+    margin: 0px auto;
+}
+
+.fields__individual {
+    line-height: 1.5;
+}
+
+.fields__individual em:hover{
+    text-decoration: underline;
+}
+
+.fields__individual h3{
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 0px;
+    color: #616161;
+
+}
+
+.fields__individual h4{
+    font-size: 20px;
+    font-weight: normal;
+    margin: 10px 0px 0px;
+}
+
+.fields__individual.green, em.green{
+    color:#138613;
+}
+
+.fields__individual .red, .red{
+    color:#F36F0B;
+}
+
+.fields__individual a{
+    font-style: italic;
+    color: #0000cc;
 }
