@@ -8,6 +8,13 @@ html {
 p{
     font-size: 12px;
 }
+
+.centered {
+    margin: 0px auto;
+}
+.mg-t-10{
+    margin-top: 10px;
+}
 .button-xsmall{
     font-size: 70%;
 }
@@ -170,17 +177,29 @@ address book individual profile
     border-bottom:1px solid #9C9B9B;
     margin-bottom: 10px;
 }
-.pure-u-1-1.picture-list__image{
+.picture-list__image{
     margin-top:20px;
     border:solid 1px #888888;
     border-radius:5px;
 }
-.pure-u-1-1.picture-list__image img {
+
+.picture-list__image--profile {
     width: 100%;
     padding: 3px;
-    margin: 0px auto;
+    margin: 0 auto;
 }
-
+.picture-list__image--shield {
+    width: 12%;
+    margin: 5px;
+}
+.picture-list__lists li{
+    list-style-type: none;
+    color: #0000cc;
+    font-style: italic;
+}
+.picture-list__lists li:nth-child(3n){
+    color: #339933;
+}
 .fields__individual {
     line-height: 1.5;
 }
@@ -214,4 +233,23 @@ address book individual profile
 .fields__individual a{
     font-style: italic;
     color: #0000cc;
+}
+.employee-list__item__picture{
+    border: 1px solid #cccccc;
+}
+.employee-list__item__information{
+    padding-left:20px;
+}
+.employee-list__item__information h4{
+    margin-top:0px;
+    padding-top:0px;
+}
+.employee-list__item__information ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    line-height: 1em;
+}
+.white{
+    color:white;
 }
