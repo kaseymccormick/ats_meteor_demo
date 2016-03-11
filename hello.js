@@ -10,24 +10,26 @@ if (Meteor.isClient) {
         }
 
     });
-
     Template.register.events({
         'submit form': function(event) {
             event.preventDefault();
-            var fnameVar = event.target.registerFname.value;
-            var lnameVar = event.target.registerLname.value;
             var emailVar = event.target.registerEmail.value;
             var passwordVar = event.target.registerPassword.value;
+            var fnameVar = event.target.registerFname.value;
+            var lnameVar = event.target.registerLname.value;
             console.log("Form submitted.");
             Accounts.createUser({
                 // options go here
-                fname:fnameVar,
-                lname:lnameVar,
                 email: emailVar,
-                password: passwordVar
+                password: passwordVar,
+                profile: {
+                    firstName: fnameVar,
+                    lastName: lnameVar
+                }
             })
         }
     });
+
 
     Template.login.events({
         'submit form': function(event) {
