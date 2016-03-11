@@ -1,0 +1,24 @@
+.light a{
+    color: #cccccc;
+}
+.login-box{
+    border: 2px solid #cccccc;
+    border-radius: 5px;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(184,184,184,1);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(184,184,184,1);
+    box-shadow: 4px 4px 5px 0px rgba(184,184,184,1);
+    padding:20px;
+}
+.login-box h2{
+    font-weight: normal;
+    color:#616161;
+}
+.login-box__header img{
+    width: 30%;
+    margin: 0 auto;
+    display: inherit;
+}
+
+.image-select__image{
+    margin-bottom: 45px;
+}
