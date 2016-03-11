@@ -1,6 +1,15 @@
 if (Meteor.isClient) {
-// counter starts at 0
+    // counter starts at 0
     Session.setDefault('counter', 0);
+
+    Template.NavigationLayout.events({
+        'click .logout': function(){
+            event.preventDefault();
+            console.log("Logout Clicked.");
+            Meteor.logout();
+        }
+
+    });
 
     Template.register.events({
         'submit form': function(event) {
@@ -26,8 +35,9 @@ if (Meteor.isClient) {
         }
     });
 }
+
 if (Meteor.isServer) {
-  Meteor.startup(function () {
-    // code to run on server at startup
-  });
+    Meteor.startup(function () {
+        // code to run on server at startup
+    });
 }

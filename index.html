@@ -1,11 +1,71 @@
+<template name="user">
+
 <head>
     <title>ATS Secured</title>
 </head>
+
 <body>
+
 {{#if currentUser}}
-    {{> dashboard}}
+    {{> imageSelect}}
 {{else}}
-    {{> register}}
     {{> login}}
 {{/if}}
 </body>
+
+</template>
+
+
+<template name="register">
+    <p>Register</p>
+    <form>
+        Email:<input type="email" name="registerEmail">
+        Password:<input type="password" name="registerPassword">
+        <input type="submit" name="register">
+    </form>
+</template>
+
+<template name="login">
+    <h2>Login Here</h2>
+    <p>Enter your email and password to login</p>
+    <form class="pure-form pure-form-stacked">
+        <fieldset>
+
+            <label for="email">Email</label>
+            <input name="loginEmail" class="pure-input-1" id="email" type="email" placeholder="Email">
+
+            <label for="password">Password</label>
+            <input name="loginPassword" class="pure-input-1" id="password" type="password" placeholder="Password">
+
+            <label for="remember" class="pure-checkbox">
+                <input id="remember" type="checkbox"> Remember me
+            </label>
+            <a class="light" href="/register">register</a>
+
+            <button type="submit" name="Login" class="pure-button button-success floatR"><i class="fa fa-check"></i> Login</button>
+        </fieldset>
+    </form>
+
+</template>
+
+<template name="imageSelect">
+    <div class="pure-g">
+<div class="pure-u-1-1">
+        <h2>Please Select your <b>Security Image</b></h2>
+</div>
+        <div class="image-select__image-library">
+        <div class="pure-u-1-4 image-select__image"> <a href="/dashboard"> <img src="1.jpg" alt=""/> </a> </div>
+        <div class="pure-u-1-4 image-select__image"> <a href="/dashboard"> <img src="2.jpg" alt=""/> </a> </div>
+        <div class="pure-u-1-4 image-select__image"> <a href="/dashboard"> <img src="3.jpg" alt=""/> </a> </div>
+        <div class="pure-u-1-4 image-select__image"> <a href="/dashboard"> <img src="4.jpg" alt=""/> </a> </div>
+        <div class="pure-u-1-4 image-select__image"> <a href="/dashboard"> <img src="5.jpg" alt=""/> </a> </div>
+        <div class="pure-u-1-4 image-select__image"> <a href="/dashboard"> <img src="6.jpg" alt=""/> </a> </div>
+        <div class="pure-u-1-4 image-select__image"> <a href="/dashboard"> <img src="7.jpg" alt=""/> </a> </div>
+        <div class="pure-u-1-4 image-select__image"> <a href="/dashboard"> <img src="12.jpg" alt=""/> </a> </div>
+        <div class="pure-u-1-4 image-select__image"> <a href="/dashboard"> <img src="8.jpg" alt=""/> </a> </div>
+        <div class="pure-u-1-4 image-select__image"> <a href="/dashboard"> <img src="9.jpg" alt=""/> </a> </div>
+        <div class="pure-u-1-4 image-select__image"> <a href="/dashboard"> <img src="10.jpg" alt=""/> </a> </div>
+        <div class="pure-u-1-4 image-select__image"> <a href="/dashboard"> <img src="11.jpg" alt=""/> </a> </div>
+        </div>
+    </div>
+</template>
