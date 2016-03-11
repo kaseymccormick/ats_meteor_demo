@@ -3,7 +3,7 @@ if (Meteor.isClient) {
     Session.setDefault('counter', 0);
 
     Template.NavigationLayout.events({
-        'click .logout': function(){
+        'click .logout': function () {
             event.preventDefault();
             console.log("Logout Clicked.");
             Meteor.logout();
@@ -12,7 +12,7 @@ if (Meteor.isClient) {
     });
 
     Template.register.events({
-        'submit form': function(event) {
+        'submit form': function (event) {
             event.preventDefault();
             var emailVar = event.target.registerEmail.value;
             var passwordVar = event.target.registerPassword.value;
@@ -26,7 +26,7 @@ if (Meteor.isClient) {
     });
 
     Template.login.events({
-        'submit form': function(event) {
+        'submit form': function (event) {
             event.preventDefault();
             var emailVar = event.target.loginEmail.value;
             var passwordVar = event.target.loginPassword.value;
@@ -34,7 +34,12 @@ if (Meteor.isClient) {
             Meteor.loginWithPassword(emailVar, passwordVar);
         }
     });
+    showTab = function() {
+    document.getElementById("vm-sub").className += "visible"
+        if
+    }
 }
+
 
 if (Meteor.isServer) {
     Meteor.startup(function () {
