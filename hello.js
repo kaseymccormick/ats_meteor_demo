@@ -4,7 +4,6 @@ if (Meteor.isClient) {
 
     Template.NavigationLayout.events({
         'click .logout': function () {
-            event.preventDefault();
             console.log("Logout Clicked.");
             Meteor.logout();
         }
