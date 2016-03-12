@@ -22,7 +22,7 @@ p{
     background-color: #339933;
     color:white;
 }
-.header__title{
+.header__title, .header-plus{
     border-bottom:1px solid #616161;
     margin-bottom:10px;
 }
@@ -222,7 +222,7 @@ address book individual profile
     color:#138613;
 }
 
-.fields__individual .red, .red{
+.fields__individual .red, .red {
     color:#F36F0B;
 }
 
