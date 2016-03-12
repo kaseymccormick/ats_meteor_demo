@@ -17,13 +17,30 @@
 
 
 <template name="register">
-    <p>Register</p>
-    <form>
-        First Name:<input type="Fname" name="registerFname">
-        Last Name:<input type="Fname" name="registerLname">
-        Email:<input type="email" name="registerEmail">
-        Password:<input type="password" name="registerPassword">
-        <input type="submit" name="register">
+    <h2>Register</h2>
+    <form class="pure-form pure-form-stacked">
+        <fieldset>
+                <label for="name">First Name</label>
+                <input id="name" class="pure-input-1" type="text" name="registerFname">
+
+
+                <label for="lastname">Last Name</label>
+                <input id="lastname" class="pure-input-1" type="text" placeholder="lastname" name="registerLname">
+
+                <label for="email">Email Address</label>
+                <input id="email" class="pure-input-1" type="email" placeholder="Email Address" name="registerEmail">
+
+                <label for="pw">Password</label>
+                <input id="pw" class="pure-input-1" type="text" placeholder="password" name="registerPassword">
+
+
+                <button type="submit" class="floatR pure-button pure-button-primary">Submit</button>
+
+            <a href="/" >sign in screen</a>
+
+        </fieldset>
+
+
     </form>
 </template>
 
