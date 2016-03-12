@@ -22,10 +22,9 @@ p{
     background-color: #339933;
     color:white;
 }
-.header{
+.header__title{
     border-bottom:1px solid #616161;
-    padding-bottom: 0px;
-    margin-bottom:0px;
+    margin-bottom:10px;
 }
 
 .header__button{

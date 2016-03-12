@@ -69,3 +69,9 @@
     list-style-type: none;
     padding:2px;
 }
+.fd-info-list {
+    list-style-type: none;
+    padding:0px;
+    margin:0;
+    line-height: 1.3em;
+}
