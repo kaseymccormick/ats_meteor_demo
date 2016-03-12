@@ -85,3 +85,9 @@
 .name-link:hover{
     text-decoration:underline;
 }
+.light{
+    color:white;
+}
+.light:hover{
+    color:grey;
+}
