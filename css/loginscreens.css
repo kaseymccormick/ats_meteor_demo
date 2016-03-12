@@ -22,3 +22,50 @@
 .image-select__image{
     margin-bottom: 45px;
 }
+.notification__item{
+    border:1px solid #cccccc;
+    border-radius:5px;
+    margin:8px;
+}
+.notification__item__icon  {
+    text-align: center;
+    vertical-align: bottom;
+}
+.notification__item__icon i{
+    margin-top: 30px;
+}
+.good{
+    color: rgba(11, 116, 11, 0.5);
+}
+.warning{
+    color: rgba(255, 128, 11, 0.6);
+}
+.attention{
+    color: rgba(204, 0, 0, 0.75);
+}
+.notification__item__cta {
+    text-align: center;
+    margin-top: 25px;
+}
+.timestamp{
+    margin-top: -20px;
+    font-style:italic;
+    color:#ccc;
+}
+.notification__item__dismiss i{
+    padding: 2px;
+    border: solid 1px #cccccc;
+    border-radius: 15px;
+    background: #ccc;
+    margin: 4px;
+}
+.visible{
+    display:block;
+}
+.pure-menu-item--sub a{
+    text-decoration: none;
+}
+.pure-menu-item-subnav li{
+    list-style-type: none;
+    padding:2px;
+}
