@@ -35,8 +35,21 @@ if (Meteor.isClient) {
         }
     });
     showTab = function() {
+        //var classes = document.getElementById("vm-sub").classList
+        //
+        //$.each( classes , function(x) {
+        //
+        //        if( x="hidden") {
+        //            classes.removeClass("hidden")
+        //        } else {
+        //            classes.addClass("hidden")
+        //        }
+        //    });
+        //
+        //
+        //
+
     document.getElementById("vm-sub").className += "visible"
-        if
     }
 }
 

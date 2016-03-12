@@ -62,3 +62,10 @@
 .visible{
     display:block;
 }
+.pure-menu-item--sub a{
+    text-decoration: none;
+}
+.pure-menu-item-subnav li{
+    list-style-type: none;
+    padding:2px;
+}
