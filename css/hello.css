@@ -247,5 +247,5 @@ address book individual profile
     line-height: 1em;
 }
 .white{
-    color:white;
+    color:white !important;
 }
