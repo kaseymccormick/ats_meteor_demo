@@ -9,6 +9,15 @@ if (Meteor.isClient) {
         }
 
     });
+
+    Template.NavigationLayout.helpers({
+        firstName: function() {
+            return Meteor.user().profile.firstName;
+        },
+        lastName: function() {
+            return Meteor.user().profile.lastName;
+        }
+    });
     Template.register.events({
         'submit form': function (event) {
 
