@@ -22,10 +22,9 @@ p{
     background-color: #339933;
     color:white;
 }
-.header{
+.header__title, .header-plus{
     border-bottom:1px solid #616161;
-    padding-bottom: 0px;
-    margin-bottom:0px;
+    margin-bottom:10px;
 }
 
 .header__button{
@@ -86,11 +85,8 @@ h4{
 }
 .navigation-left-bar{
     border-right: solid 1px #339933;
-    -webkit-box-shadow: 4px 52px 4px -4px rgba(204,204,204,1);
-    -moz-box-shadow: 4px 52px 4px -4px rgba(204,204,204,1);
-    box-shadow: 4px 52px 4px -4px rgba(204,204,204,1);
     position: fixed;
-    height:800px;
+    height:2100px;
     background-color:white;
     z-index: 9999;
 }
@@ -226,7 +222,7 @@ address book individual profile
     color:#138613;
 }
 
-.fields__individual .red, .red{
+.fields__individual .red, .red {
     color:#F36F0B;
 }
 

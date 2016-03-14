@@ -69,3 +69,25 @@
     list-style-type: none;
     padding:2px;
 }
+.fd-info-list {
+    list-style-type: none;
+    padding:0px;
+    margin:0;
+    line-height: 1.3em;
+}
+.c-orange{
+     color:#F36F0B;
+ }
+.name-link{
+    text-decoration:none;
+    color:#339933
+}
+.name-link:hover{
+    text-decoration:underline;
+}
+.light{
+    color:white;
+}
+.light:hover{
+    color:grey;
+}

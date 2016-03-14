@@ -45,7 +45,7 @@
 }
 
 .default-button {
-  border-radius: 5px !important;
+  border-radius: 3px !important;
   border: 1px solid #616161 !important;
   background-color: #fff !important;
   height: 30px !important;
@@ -55,7 +55,7 @@
 }
 
 .small-button {
-  border-radius: 5px !important;
+  border-radius: 3px !important;
   border: 1px solid #616161 !important;
   background-color: #fff !important;
   height: 20px !important;
@@ -66,14 +66,18 @@
 }
 
 .reply-button {
-  border-radius: 5px !important;
+  border-radius: 3px !important;
   background-color: #339933 !important;
   height: 25px !important;
   width: 100px !important;
   font-size: 14px !important;
   color: #fff !important;
   padding: 0px 5px;
-  margin-right: 17px;
+}
+
+.line-height-30 {
+  line-height: 30px !important;
+  width: 95% !important;
 }
 
 .vendor_img {
@@ -94,7 +98,6 @@ h5 {
 h6 {
   padding: 0;
   margin: 0;
-  margin-left: 32px;
   color: #616161;
   font-size: 16px;
 }
@@ -102,9 +105,9 @@ h6 {
 h7 {
   padding: 0;
   margin: 0;
-  margin-left: 50px;
   color: #616161;
   font-size: 14px;
+  margin-left: 20px;
 }
 
 h8 {
@@ -127,15 +130,15 @@ h8 {
   margin-top: 25px;
 }
 
-.left-mar-50 {
-  margin-left: 50px;
+.pad-left-20 {
+  padding-left: 20px;
 }
 
 .invoices, .vend-docs, .document_comments {
   width: 100%;
-  padding-left: 20px;
   font-size: 12px;
   color: #616161;
+  margin-top: 10px;
 }
 
 .invoices thead, .vend-docs thead, .document_comments thead {
@@ -158,6 +161,11 @@ h8 {
 
 .comment-reply {
   resize: none;
+  width: 100%;
+}
+
+.pad-top-20 {
+  padding-top: 20px;
 }
 
 /* styles for approval radio buttons */

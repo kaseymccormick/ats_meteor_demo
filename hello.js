@@ -4,26 +4,31 @@ if (Meteor.isClient) {
 
     Template.NavigationLayout.events({
         'click .logout': function () {
-            event.preventDefault();
             console.log("Logout Clicked.");
             Meteor.logout();
         }
 
     });
-
     Template.register.events({
         'submit form': function (event) {
-            event.preventDefault();
+
             var emailVar = event.target.registerEmail.value;
             var passwordVar = event.target.registerPassword.value;
+            var fnameVar = event.target.registerFname.value;
+            var lnameVar = event.target.registerLname.value;
             console.log("Form submitted.");
             Accounts.createUser({
                 // options go here
                 email: emailVar,
-                password: passwordVar
+                password: passwordVar,
+                profile: {
+                    firstName: fnameVar,
+                    lastName: lnameVar
+                }
             })
         }
     });
+
 
     Template.login.events({
         'submit form': function (event) {
