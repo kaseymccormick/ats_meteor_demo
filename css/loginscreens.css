@@ -91,3 +91,7 @@
 .light:hover{
     color:grey;
 }
+#user-name{
+    color: #616161;
+    font-weight:normal;
+}
