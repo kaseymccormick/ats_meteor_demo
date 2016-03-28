@@ -23,11 +23,10 @@
                     <ul class="fd-info-list">
                         <li><b>Date Issued:</b> 4/15/15</li>
                         <li><b>Closing Date</b>
-                            <span class="red-text"> 4/15/15
-                                <a href="#" data-tooltip="TPS: 4/15/15 LOS: 4/16/15">
-                                    <i class="fa fa-question-circle red-text"></i>
-                                </a>
-                            </span>
+                            <a href="#" class="tooltip">
+                                <span class="red-text">TPS: 4/15/15 LOS: 4/16/15</span>
+                                <em class="red-text"> 4/16/15 </em><i class="fa fa-question-circle red-text"></i>
+                            </a>
                         </li>
                         <li><b>Disbursement Date:</b> 4/15/15</li>
                     </ul>
@@ -37,7 +36,7 @@
                         <dd>Anytown St 12342</dd>
                         <dd>City, State, Zip</dd>
                     </dl>
-                    <a class="pure-button pure-button-primary" target="_blank" href="CDF-NPD160.PDF">View Closing Disclosure</a>
+                    <a class="pure-button pure-button-primary button-xsmall" target="_blank" href="CDF-NPD160.PDF">View Closing Disclosure</a>
 
                 </div>
                 <div class="pure-u-1-3">
@@ -68,25 +67,230 @@
                         <li><b>File ID#</b> 123456789</li>
                         <li><b>MIC#</b> 00033456</li>
                     </ul>
-                    <a class="pure-button pure-button-primary" target="_blank" href="CDF-NPD160.PDF">Upload associated docs</a>
+                    <a class="pure-button pure-button-primary button-xsmall m-t-35 " target="_blank" href="CDF-NPD160.PDF">Upload other associated documents</a>
                 </div>
 
             </div>
         </div>
-        <div class="pure-u-1-5 disbursement-stat">
-            stuffl
+        <div class="pure-u-1-1 disb-stats">
+            <div class="pure-g">
+                <div class="pure-u-4-24 disb-stats__item sale-price">
+                    <b>Sale Price</b>
+                    <h2>160,000</h2>
+                </div>
+                <div class="pure-u-4-24 disb-stats__item loan">
+                    <b>Loan Amount Actual</b>
+                    <h2>160,000</h2>
+                    <h5>Scheduled:120,000</h5>
+                </div>
+                <div class="pure-u-4-24 disb-stats__item credit">
+                    <b>Credits Actual</b>
+                    <h2>160,000</h2>
+                    <h5>Scheduled:120,000</h5>
+                </div>
+                <div class="pure-u-4-24 disb-stats__item debit">
+                    <b>Debits Actual</b>
+                    <h2>160,000</h2>
+                    <h5>Scheduled:120,000</h5>
+                </div>
+                <div class="pure-u-4-24 disb-stats__item balance">
+                    <b>Balance Actual</b>
+                    <h2>160,000</h2>
+                    <h5>Scheduled:120,000</h5>
+                </div>
+            </div>
         </div>
-        <div class="pure-u-1-5 disbursement-stat">
-            stuffl
-        </div>
-        <div class="pure-u-1-5 disbursement-stat">
-            stuffl
-        </div>
-        <div class="pure-u-1-5 disbursement-stat">
-            stuffl
-        </div>
-        <div class="pure-u-1-5 disbursement-stat">
-            stuffl
+        <div class="pure-u-1-1 disb-list">
+            <div class="pure-g">
+                <div class="pure-u-1-1">
+                    <div class="pure-g disb-list__item gray-outline">
+                        <div class="pure-u-1-24 disb-list__item__indicator">
+                        </div>
+                        <div class="pure-u-4-24 disb-list__item__company">
+                            <b>Organization Name</b>
+                        </div>
+                        <div class="pure-u-4-24 disb-list__item__description">
+                            Line Item Description
+                        </div>
+                        <div class="pure-u-2-24 disb-list__item__dlm">
+                            Date Last Modified
+                        </div>
+                        <div class="pure-u-3-24 disb-list__item__amount">
+                            <h2>Amount</h2>
+                        </div>
+                        <div class="pure-u-10-24 disb-list__item__actions">
+                            <i class="fa fa-upload"> Upload documents for this line item</i>
+                            <i class="fa fa-info-circle"> Make associations and payments</i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pure-u-1-1 debit">
+                    <div class="pure-g disb-list__item">
+                        <div class="pure-u-1-24 disb-list__item__indicator orange">
+                        </div>
+                        <div class="pure-u-4-24 disb-list__item__company">
+                            <b>TNT Termite</b>
+                        </div>
+                        <div class="pure-u-4-24 disb-list__item__description">
+                            Termite Inspection
+                        </div>
+                        <div class="pure-u-2-24 disb-list__item__dlm">
+                            11/05/15
+                        </div>
+                        <div class="pure-u-3-24 disb-list__item__amount">
+                            <h2>$85.00</h2>
+                        </div>
+                        <div class="pure-u-5-24 disb-list__item__actions">
+                            <i class="fa fa-upload"> Upload Documents</i>
+                        </div>
+                        <div class="pure-u-5-24 disb-list__item__actions">
+                            <i class="fa fa-info-circle"> More Information</i>
+                        </div>
+                    </div>
+                    <div class="pure-g disb-list__details">
+                        <div class="pure-u-6-24">
+                            <h3><i class="fa fa-building-o"></i> Vendor Association</h3>
+                            <label for="vendors">there are three possible matches</label>
+                            <select name="vendors">
+                                <option selected disabled>please select</option>
+                                <optgroup label="Your Vendors">
+                                    <option value="1">Organization Name</option>
+                                    <option disabled> address line one and suite</option>
+                                    <option disabled>two city state zip </option>
+                                </optgroup>
+                                <optgroup label="Also on the Platform">
+                                    <option value="2">Organization Name</option>
+                                    <option disabled> address line one and suite</option>
+                                    <option disabled>two city state zip </option>
+
+                                    <option value="3">Organization Name</option>
+                                    <option disabled> address line one and suite</option>
+                                    <option disabled>two city state zip </option>
+                                </optgroup>
+                                <optgroup label="Other Options">
+                                    <option value="4">Search</option>
+                                    <option value="5">Add Vendor</option>
+                                </optgroup>
+                            </select>
+
+                        </div>
+                        <div class="pure-u-6-24">
+                            <h3><i class="fa fa-file-text-o"></i> Invoice Association</h3>
+                            <ul class="invoice-list">
+                                <li class="red-text"><i>No invoice matches available</i></li>
+                                <li><a href="" class="pure-button button-xsmall button-gray">Create invoice</a> <a href="" class="pure-button button-xsmall button-success">Add Comment</a></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="pure-u-6-24">
+                            <h3><a href="" class="button-outline"> <i class="fa fa-upload"></i> Upload Associated Docs </a></h3>
+                            <ul class="document-list">
+                                <li><a href="" target="_blank"><u>alreadyuploadeddoc.pdf <i class="fa fa-external-link"></i></u></a></li>
+                                <li><u>alreadyuploadeddoc.pdf <i class="fa fa-external-link"></i></u></li>
+                                <li><u>alreadyuploadeddoc.pdf <i class="fa fa-external-link"></i></u></li>
+
+                            </ul>
+                        </div>
+                        <div class="pure-u-6-24">
+                            <h3><i class="fa fa-money"></i> Arrange Payment</h3>
+                            <label for="type">Type of payment</label>
+                            <select name="type" id="">
+                                <option value="ACH">ACH</option>
+                                <option value="eCheck">eSign Check</option>
+                                <option value="check">Printed Check</option>
+                                <option value="wire">Wire</option>
+                                <option value="hold">Hold for Aggrigation</option>
+                            </select>
+                            <label for="account">From Account</label>
+                            <select name="account" id="">
+                                <option value="1">**7232</option>
+                                <option value="2">**6634</option>
+                            </select>
+                            <br/>
+                            <a href="" class="pure-button button-xsmall button-success"> Save Payment</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pure-u-1-1 debit">
+                    <div class="pure-g disb-list__item">
+                        <div class="pure-u-1-24 disb-list__item__indicator ">
+                        </div>
+                        <div class="pure-u-4-24 disb-list__item__company">
+                            <b>Credit Information Systems</b>
+                        </div>
+                        <div class="pure-u-4-24 disb-list__item__description">
+                            Credit Report
+                        </div>
+                        <div class="pure-u-2-24 disb-list__item__dlm">
+                            11/05/15
+                        </div>
+                        <div class="pure-u-3-24 disb-list__item__amount">
+                            <h2>$16.50</h2>
+                        </div>
+                        <div class="pure-u-5-24 disb-list__item__actions">
+                            <i class="fa fa-upload"> Upload Documents</i>
+                        </div>
+                        <div class="pure-u-5-24 disb-list__item__actions">
+                            <i class="fa fa-info-circle"> More Information</i>
+                        </div>
+                    </div>
+                    <div class="pure-g disb-list__details">
+                        <div class="pure-u-6-24">
+                            <h3><i class="fa fa-building-o"></i> Vendor Association</h3>
+                            <label for="vendors">there are three possible matches</label>
+                            <select name="vendors">
+                                <option selected disabled>please select</option>
+                                <optgroup label="Your Vendors">
+                                    <option value="1">Organization Name</option>
+                                    <option disabled> address line one and suite</option>
+                                    <option disabled>two city state zip </option>
+                                </optgroup>
+                                <optgroup label="Other Options">
+                                    <option value="4">Search</option>
+                                    <option value="5">Add Vendor</option>
+                                </optgroup>
+                            </select>
+
+                        </div>
+                        <div class="pure-u-6-24">
+                            <h3><i class="fa fa-file-text-o"></i> Invoice Association</h3>
+                            <ul class="invoice-list">
+                                <li class="red-text"><i>No invoice matches available</i></li>
+                                <li><a href="" class="pure-button button-xsmall button-gray">Create invoice</a> <a href="" class="pure-button button-xsmall button-success">Add Comment</a></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="pure-u-6-24">
+                            <h3><a href="" class="button-outline"> <i class="fa fa-upload"></i> Upload Associated Docs </a></h3>
+
+                        </div>
+                        <div class="pure-u-6-24">
+                            <h3><i class="fa fa-money"></i> Arrange Payment</h3>
+                            <label for="type">Type of payment</label>
+                            <select name="type" id="">
+                                <option value="ACH">ACH</option>
+                                <option value="eCheck">eSign Check</option>
+                                <option value="check">Printed Check</option>
+                                <option value="wire">Wire</option>
+                                <option value="hold">Hold for Aggrigation</option>
+                            </select>
+                            <label for="account">From Account</label>
+                            <select name="account" id="">
+                                <option value="1">**7232</option>
+                                <option value="2">**6634</option>
+                            </select>
+                            <br/>
+                            <a href="" class="pure-button button-xsmall button-success"> Save Payment</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
         </div>
         <div class="pure-u-1-1 top-mar-25">
             <table class="pure-table pure-table-horizontal file-dis">
