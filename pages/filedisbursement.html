@@ -173,7 +173,7 @@
                                     <option value="5">Add Vendor</option>
                                 </optgroup>
                             </select>
-
+                            <a href="" class="pure-button button-xsmall button-success">Save</a>
                         </div>
                         <div class="pure-u-6-24">
                             <h3><i class="fa fa-file-text-o"></i> Invoice Association</h3>
@@ -239,28 +239,40 @@
                     <div class="pure-g disb-list__details">
                         <div class="pure-u-6-24">
                             <h3><i class="fa fa-building-o"></i> Vendor Association</h3>
+                            <ul class="invoice-list">
+                                <li class="red-text"><i>No Vendor matches available</i></li>
+                                <li><a href="" class="pure-button button-xsmall button-gray">Create Organization</a> <a href="" class="pure-button button-xsmall button-gray">Search</a></li>
+                                <li></li>
+                            </ul>
+                        </div>
+
+                        <div class="pure-u-6-24">
+                            <h3><i class="fa fa-file-text-o"></i> Invoice Association</h3>
                             <label for="vendors">there are three possible matches</label>
                             <select name="vendors">
                                 <option selected disabled>please select</option>
-                                <optgroup label="Your Vendors">
-                                    <option value="1">Organization Name</option>
-                                    <option disabled> address line one and suite</option>
-                                    <option disabled>two city state zip </option>
+                                <optgroup>
+                                    <option value="1">Invoice Title</option>
+                                    <option disabled>Organization</option>
+                                    <option disabled>Amount </option>
                                 </optgroup>
-                                <optgroup label="Other Options">
-                                    <option value="4">Search</option>
-                                    <option value="5">Add Vendor</option>
+                                <optgroup>
+                                    <option value="2">Invoice Title</option>
+                                    <option disabled>Organization</option>
+                                    <option disabled>Amount</option>
+                                </optgroup>
+                                <optgroup>
+                                    <option value="3">Invoice Title</option>
+                                    <option disabled>Organziation</option>
+                                    <option disabled>Amount</option>
+                                </optgroup>
+                                <optgroup>
+                                    <option value="4">Do not associate an invoice</option>
                                 </optgroup>
                             </select>
-
-                        </div>
-                        <div class="pure-u-6-24">
-                            <h3><i class="fa fa-file-text-o"></i> Invoice Association</h3>
-                            <ul class="invoice-list">
-                                <li class="red-text"><i>No invoice matches available</i></li>
-                                <li><a href="" class="pure-button button-xsmall button-gray">Create invoice</a> <a href="" class="pure-button button-xsmall button-success">Add Comment</a></li>
-                                <li></li>
-                            </ul>
+                            <br/>
+                            <br/>
+                            <a href="" class="pure-button button-xsmall button-gray">Create Organization</a> <a href="" class="pure-button button-xsmall button-gray">Search</a>
                         </div>
                         <div class="pure-u-6-24">
                             <h3><a href="" class="button-outline"> <i class="fa fa-upload"></i> Upload Associated Docs </a></h3>
@@ -287,7 +299,31 @@
                     </div>
                 </div>
 
+                <div class="pure-u-1-1 debit">
+                    <div class="pure-g disb-list__item">
+                        <div class="pure-u-1-24 disb-list__item__indicator ">
+                        </div>
+                        <div class="pure-u-4-24 disb-list__item__company">
+                            <b>Residential Appraisal Services</b>
+                        </div>
+                        <div class="pure-u-4-24 disb-list__item__description">
+                            Apprisal Fee
+                        </div>
+                        <div class="pure-u-2-24 disb-list__item__dlm">
+                            11/05/15
+                        </div>
+                        <div class="pure-u-3-24 disb-list__item__amount">
+                            <h2>$450.00</h2>
+                        </div>
+                        <div class="pure-u-5-24 disb-list__item__actions">
+                            <i class="fa fa-upload"> Upload Documents</i>
+                        </div>
+                        <div class="pure-u-5-24 disb-list__item__actions">
+                            <i class="fa fa-info-circle"> More Information</i>
+                        </div>
+                    </div>
 
+                </div>
 
 
             </div>
@@ -305,15 +341,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td>Residential Appraisal Services</td>
-                    <td>Appraisal Fee</td>
-                    <td>3/11/2016</td>
-                    <td>450.00</td>
-                    <td>Status</td>
-                    <td> <i class="fa fa-minus"></i>  |  <input type="checkbox"/> </td>
 
-                </tr>
 
                 <tr>
                     <td>Collateral Management</td>
@@ -325,20 +353,7 @@
                     <td> <i class="fa fa-minus"></i>  |  <input type="checkbox"/> </td>
 
                 </tr>
-                <tr>
-                    <td>
-                        Credit Information Systems</td><td>
-                    Credit Report
-                </td><td>
-                    3/11/2016
-                </td><td>
-                    16.50
-                </td><td>
-                    Status
-                </td>
-                    <td> <i class="fa fa-minus"></i>  |  <input type="checkbox"/> </td>
 
-                </tr>
 
 
 
