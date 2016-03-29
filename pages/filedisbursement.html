@@ -6,7 +6,7 @@
                     <h1>File Disbursement</h1>
                 </div>
                 <div class="pure-u-5-24 alert-box">
-                    <i class="fa fa-warning"> [12] new changes</i>
+                    <i class="fa fa-warning"> <b>1</b> new change</i>
                 </div>
 
                 <div class="pure-u-1-24"></div>
@@ -37,7 +37,9 @@
                         <dd>City, State, Zip</dd>
                     </dl>
                     <a class="pure-button pure-button-primary button-xsmall" target="_blank" href="CDF-NPD160.PDF">View Closing Disclosure</a>
-
+                    <!--<a href="#" class="btn btn-lg btn-success"-->
+                       <!--data-toggle="modal"-->
+                       <!--data-target="#basicModal"> open Modal</a>-->
                 </div>
                 <div class="pure-u-1-3">
                     <h3>Transaction Information</h3>
@@ -108,7 +110,7 @@
                 <table class="pure-table pure-table-horizontal">
                     <thead>
                     <tr>
-                        <th>Line Item Description</th>
+                        <th>Pest Inspection</th>
                         <th>Invoice</th>
                         <th>Payee</th>
                         <th>Amount</th>
@@ -120,9 +122,10 @@
 
                     <tbody>
                     <tr>
-                        <td><i class="fa fa-circle c-orange"></i> line item description</td>
+                        <td><i class="fa fa-circle c-orange"></i> Termite Inspection
+                        </td>
                         <td>
-                            <i class="fa fa-upload fa-2x"></i>
+                            <a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>
                         </td>
                         <td>
                             <tr>
@@ -145,10 +148,10 @@
                                 </td>
                             </tr>
                             <tr>
-                                <a href="" class="pure-button button-xsmall button-success m-t-10">Add Payee</a>
+                                <a href="/add-payee" class="pure-button button-xsmall button-success m-t-10">Add Payee</a>
                             </tr>
                         </td>
-                        <td><h3>$85.00</h3></td>
+                        <td><h3 class="c-orange">$85.00</h3></td>
                         <td><input type="radio" class="toggle-yes" id="approve_yes_001231" name="approval_001231">
                             <label for="approve_yes_001231">YES</label>
                             <input type="radio" class="toggle-no" id="approve_no_001231" name="approval_001231">
@@ -156,19 +159,79 @@
                         <td>
                             <select name="payment" id="payment">
                                 <option value="0"><i>Please Select</i></option>
-                                <option value="1">Digital Check</option>
+                                <option value="1" disabled>Digital Check</option>
                                 <option value="2">Paper Check</option>
-                                <option value="3">ACH</option>
-                                <option value="4">Wire</option>
+                                <option value="3" disabled>ACH</option>
+                                <option value="4" disabled>Wire</option>
                                 <option value="5">Pay outside of platform</option>
-                                <option value="6">Hold for Aggregation</option>
-                                <option value="7">Transfer to Operating</option>
+                                <option value="6" disabled>Hold for Aggregation</option>
+                                <option value="7" disabled>Transfer to Operating</option>
                             </select>
                             <br/>
-                        <a href="" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>
+                        <a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>
 
                     </td>
                         <td><a href="" class="pure-button button-xsmall button-success"> Save</a></td>
+
+                    </tr>
+
+
+                    <!--row two-->
+                    <tr class="pure-table-odd saved">
+                        <td>Appraisal Fee
+                        </td>
+                        <td>
+                            <a href="">ResAppraisal.pdf <i class="fa fa-external-link"></i></a>
+                        </td>
+
+
+                        <td class="c-green">Residential Appraisal Services</td>
+
+
+
+                    <td><h3>$450.00</h3></td>
+                    <td>
+                        <label for="approve_yes_001231">YES</label>
+                    </td>
+                    <td>
+                        <tr>
+                        <td class="c-green">Paper Check</td>
+                        </tr>
+                        <tr>
+                        <td> <b>From Account:</b> **3342</td>
+                        </tr>
+                    </td>
+                    <td><a href="" class="pure-button button-xsmall button-gray"> Edit</a></td>
+
+                    </tr>
+
+
+                    <!--row three-->
+                    <tr class="pure-table-odd saved">
+                        <td>Flood Certification
+                        </td>
+                        <td>
+                            <a href="">flood.pdf <i class="fa fa-external-link"></i></a>
+                        </td>
+
+
+                        <td class="c-green">American Flood Research</td>
+
+
+
+                        <td><h3>$11.00</h3></td>
+                        <td>
+                            <label for="approve_yes_001231">YES</label>
+                        </td>
+                        <td>
+                    <tr>
+                        <td class="c-green">Paper Check</td>
+                    </tr>
+                    <tr>
+                        <td> <b>From Account:</b> **3342</td>
+                    </tr>
+                    </td>
+                    <td><a href="" class="pure-button button-xsmall button-gray"> Edit</a></td>
 
                     </tr>
 
@@ -204,7 +267,18 @@
             </div>
         </div>
         <div class="pure-u-1-1 disb-history__content">
-
+            <div class="pure-g">
+                <div class="pure-u-1-1">
+                    <div class="pure-g history__content__item">
+                <div class="pure-u-3-24">
+                    <img class="comment-user-profile" src="/ArtLightwood.png" alt="ArtLightwood"/>
+                </div>
+                <div class="pure-u-21-24">
+                    <p><b class="c-green">Art Lightwood</b> uploaded <u>ResAppraisal.pdf</u> on 3/15/15</p>
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
 
         <div class="pure-u-1-1 cta">
@@ -217,3 +291,137 @@
     </div>
 </template>
 
+<template name="popup__upload_document">
+    <div class="pure-g ">
+        <div class="pure-u-12-24 popup">
+            <div class="pure-g">
+                <div class="pure-u-1-1 header__title">
+                    <h3 class="t-centered">Upload Document</h3>
+                </div>
+                <div class="pure-u-1-1">
+                    <table class="pure-table pure-table-bordered">
+                        <thead>
+                        <tr>
+                            <th>Selected</th>
+                            <th>Name</th>
+                            <th>Date Created</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr >
+                            <td></td>
+                            <td><i class="fa fa-folder"></i>TNT</td>
+                            <td></td>
+                        </tr>
+
+                        <tr class="pure-table-odd">
+                            <td><input type="radio"/></td>
+                            <td>&nbsp;&nbsp;&nbsp;January_suzy_Invoice431.pdf</td>
+                            <td>1/15/14</td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="radio"/></td>
+                            <td>&nbsp;&nbsp;&nbsp;Febrauray_Frank_invoice332.pdf</td>
+                            <td>2/11/16</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="pure-u-1-2 m-t-10 ">
+                    <a href="/view-disb" class="pure-button pure-button-primary ">From Computer</a>
+                </div>
+                <div class="pure-u-1-2 m-t-10 ">
+                    <a href="/view-disb" class="pure-button button-success floatR">Attach</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+<template name="popup__add-payee">
+<div class="pure-g">
+    <div class="pure-u-12-24 popup">
+        <div class="pure-u-1-1 header__title">
+            <h3 class="t-centered"> Add Payee</h3>
+        </div>
+        <div class="pure-u-1-1">
+            <form class="pure-form pure-form-stacked">
+            <label for="search">Search on the platform</label>
+            <input class="pure-input-1" type="text"/>
+            </form>
+        </div>
+        <div class="pure-u-1-1">
+            <form class="pure-form pure-form-stacked">
+                <fieldset>
+                    <legend><h3>Add Payee to the platform</h3></legend>
+
+                    <label for="email">Email</label>
+                    <input class="pure-input-1" id="email" type="email" placeholder="Email">
+
+                    <label for="Fname">First Name</label>
+                    <input class="pure-input-1" id="Fname" type="text">
+
+                    <label for="Lname">Last Name</label>
+                    <input class="pure-input-1" id="Lname" type="text"/>
+
+                    <label for="org">Organization name</label>
+                    <input class="pure-input-1" type="text"/>
+
+                    <label for="org address">Organization Address</label>
+                    <input class="pure-input-1" placeholder="address line 1"  type="text"/>
+
+                    <input class="pure-input-1" placeholder="city" type="text"/>
+                    <input class="pure-input-1" placeholder="state" type="text"/>
+                    <input class="pure-input-1" placeholder="zip" type="text"/>
+
+                </fieldset>
+            </form>
+        </div>
+            <div class="pure-u-1-1 m-t-35">
+                <a href="/view-disb" class="pure-button button-gray ">Cancel</a>
+
+                <a href="/view-disb" class="pure-button button-success floatR">Add</a>
+            </div>
+
+    </div>
+</div>
+</template>
+<template name="popup__arrange-payment">
+<div class="pure-g ">
+    <div class="pure-u-12-24 popup">
+        <div class="pure-g">
+            <div class="pure-u-1-1 header__title">
+                <h3 class="t-centered">Arrange Payment</h3>
+            </div>
+            <div class="pure-u-1-2">
+                <b>Payment type:</b> Paper Check
+                <br/>
+                <b>From Account:</b>
+                <select name="acct" id="">
+                    <option value="1">**4435</option>
+                    <option value="2">**5523</option>
+                </select>
+            </div>
+            <div class="pure-u-1-2">
+
+                <ul class="ul-no-style"><b>To</b> Payee
+                    <li>Address Line 1</li>
+                    <li>Address Line 2</li>
+                    <li>Suite</li>
+                    <li>City, State, Zip</li>
+                </ul>
+            </div>
+
+            <div class="pure-u-3-5">
+            </div>
+            <div class="pure-u-1-5 m-t-35">
+                <a href="/view-disb" class="pure-button button-gray ">Cancel</a>
+            </div>
+            <div class="pure-u-1-5 m-t-35">
+                <a href="/view-disb" class="pure-button button-success">Submit</a>
+            </div>
+        </div>
+    </div>
+</div>
+</template>
