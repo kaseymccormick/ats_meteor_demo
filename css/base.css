@@ -1,8 +1,14 @@
 body{
     color:#616161;
 }
+a{
+    text-decoration: none;
+}
 .red-text{
     color:#C02D15;
+}
+.c-black{
+    color: #000;
 }
 .gray-outline{
     border: 1px solid #cccccc;
@@ -10,6 +16,13 @@ body{
 }
 .error{
     color: #000;
+}
+.m-t-10{
+    margin-top:10px;
+}
+.button-gray{
+    color: #ffffff;
+    background: #616161;
 }
 a.button-outline{
     border: 1px solid #616161;
@@ -148,13 +161,10 @@ a.tooltip span {
 
 }
 .credit{
-    border: 1px solid #5E740B;
 }
 .debit{
-    border: 1px solid #7b007b;
 }
 .balance{
-
 }
 .orange{
     background-color: #F36F0B;
@@ -191,3 +201,62 @@ option{
 .invoice-list li{
     list-style-type: none;
 }
+.hide{
+    display: none;
+}
+
+/*------------------------------------------------
+     Yes No radio boxes
+---------------------------------------------------*/
+/* styles for approval radio buttons */
+input[type="radio"].toggle-yes,
+input[type="radio"].toggle-no {
+    display: none;
+    width: 30px;
+    height: 30px;
+    margin-right: 0px !important;
+}
+
+input[type="radio"].toggle-yes + label {
+    border: 1px solid #616161;
+    border-radius: 3px;
+    width: 30px;
+    height: 30px;
+    padding: 4px 3px;
+}
+
+input[type="radio"].toggle-no + label {
+    border: 1px solid #616161;
+    border-radius: 3px;
+    width: 30px;
+    height: 30px;
+    padding: 4px 6px;
+}
+
+input[type="radio"].toggle-yes:checked + label {
+    background-color: #339933;
+    cursor: default;
+    color: #E6E6E6;
+    border-right: 1px solid #616161;
+}
+
+input[type="radio"].toggle-no:checked + label {
+    background-color: #9E0B0F;
+    cursor: default;
+    color: #E6E6E6;
+    border-color: #616161;
+}
+
+input[type="radio"].toggle:checked + label.btn:hover {
+    background-color: inherit;
+    background-position: 0 0;
+    transition: none;
+}
+.fd-docs{
+    padding: 0px;
+    list-style-type: none;
+}
+/*.fd-docs > *{*/
+    /*color:#366097;*/
+    /*list-style-type: none;*/
+/*}*/

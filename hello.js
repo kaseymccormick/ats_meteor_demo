@@ -11,10 +11,10 @@ if (Meteor.isClient) {
     });
 
     Template.NavigationLayout.helpers({
-        firstName: function() {
+        firstName: function () {
             return Meteor.user().profile.firstName;
         },
-        lastName: function() {
+        lastName: function () {
             return Meteor.user().profile.lastName;
         }
     });
@@ -37,7 +37,6 @@ if (Meteor.isClient) {
             })
         }
     });
-
 
     Template.login.events({
         'submit form': function (event) {
