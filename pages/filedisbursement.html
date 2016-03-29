@@ -70,9 +70,9 @@
                         <li><b>MIC#</b> 00033456</li>
                     </ul>
                     <ul class="fd-docs"> <b>Other Documents</b>
-                        <li><a href="" target="_blank"><i><u>LANDIS statement <i class="fa fa-external-link"></i></u></i></a></li>
+                        <li><a target="_blank" href="/ALTASettlement.pdf" ><i><u>ALTA Settlement Statement <i class="fa fa-external-link"></i></u></i></a></li>
                     </ul>
-                    <a class="pure-button pure-button-primary button-xsmall m-t-10 " target="_blank" href="CDF-NPD160.PDF">Upload other associated documents</a>
+                    <a class="pure-button pure-button-primary button-xsmall m-t-10" href="/upload-doc">Upload other associated documents</a>
                 </div>
 
             </div>
@@ -110,7 +110,7 @@
                 <table class="pure-table pure-table-horizontal">
                     <thead>
                     <tr>
-                        <th>Pest Inspection</th>
+                        <th>Description</th>
                         <th>Invoice</th>
                         <th>Payee</th>
                         <th>Amount</th>
@@ -181,7 +181,7 @@
                         <td><i class="fa fa-circle c-orange"></i> Appraisal Fee
                         </td>
                         <td>
-                            <a href="">ResAppraisal.pdf <i class="fa fa-external-link"></i></a>
+                            <a href="" class="c-orange">ResAppraisal.pdf <i class="fa fa-external-link"></i></a>
                         </td>
 
 
@@ -237,7 +237,7 @@
 
 
                     <!--Row four-->
-                    <tr>
+                    <tr class="pure-table-odd" >
                         <td>Title - Escrow Closing Fee
                         </td>
                         <td>
@@ -335,7 +335,7 @@
                     </tr>
 
                     <!--row six-->
-                    <tr>
+                    <tr class="pure-table-odd" >
                         <td> Title - E - Recording Fee
                         </td>
                         <td>
@@ -431,7 +431,7 @@
                     </tr>
 
                     <!--start row 8-->
-                    <tr>
+                    <tr class="pure-table-odd" >
                         <td> Homeowners Insurance Premium
                         </td>
                         <td>
@@ -528,7 +528,7 @@
 
                     <!--start row 10-->
 
-                    <tr>
+                    <tr class="pure-table-odd" >
                         <td>Transfer Tax
                         </td>
                         <td>
@@ -577,7 +577,7 @@
                     </tr>
 
                     <!--start row 11-->
-                    <tr class="pure-table-odd saved">
+                    <tr class="saved">
                         <td>Initial Escrow Payment - Homeowner's Insurance
                         </td>
                         <td>
@@ -637,7 +637,7 @@
                     <!--end row 12-->
 
                     <!--start row 13-->
-                    <tr class="pure-table-odd saved">
+                    <tr class=" saved">
                         <td>Property Taxes
                         </td>
                         <td>
@@ -668,7 +668,7 @@
                     <!--end row 13-->
 
                     <!--start row 14-->
-                    <tr>
+                    <tr class="pure-table-odd" >
                         <td> Title - Owner's Title Insurance
                         </td>
                         <td>
@@ -767,7 +767,7 @@
 
                     <!--start row 16-->
 
-                    <tr>
+                    <tr class="pure-table-odd" >
                         <td> Title - NE Insured Closing
                         </td>
                         <td>
@@ -867,7 +867,7 @@
 
                     <!--start row 18-->
 
-                    <tr>
+                    <tr class="pure-table-odd" >
                         <td> Title - Endorsement - COMP 100
                         </td>
                         <td>
@@ -967,7 +967,7 @@
 
                     <!--start row 20-->
 
-                    <tr>
+                    <tr class="pure-table-odd" >
                         <td> Title - ALTA 8.1-06 END
                         </td>
                         <td>
@@ -1058,14 +1058,21 @@
                     <p><b class="c-green">Art Lightwood</b> uploaded <u>ResAppraisal.pdf</u> on 3/15/15</p>
                     </div>
                 </div>
+                    <!--<div class="pure-u-1-1 history__content__comment">-->
+                    <!--<textarea rows="2" cols="100" placeholder="Leave a comment..." class="comment-reply">-->
+            <!--</textarea>-->
+                    <!--<br />-->
+                    <!--<button class="pure-button reply-button floatR">Send</button>-->
+                    <!--</div>-->
                 </div>
             </div>
         </div>
 
         <div class="pure-u-1-1 cta">
 
-            <a class="pure-button pure-button-disabled floatR" href="#">Disburse Funds</a>
-            <a class="pure-button pure-button-primary floatR" href="#">Submit</a>
+            <a class="pure-button pure-button-disabled floatR m-35" href="#">Disburse Funds</a>
+
+            <a class="pure-button pure-button-primary floatR m-35" href="#">Submit</a>
 
 
         </div>
@@ -1074,10 +1081,10 @@
 
 <template name="popup__upload_document">
     <div class="pure-g ">
-        <div class="pure-u-12-24 popup">
+        <div class="pure-u-13-24 popup">
             <div class="pure-g">
                 <div class="pure-u-1-1 header__title">
-                    <h3 class="t-centered">Upload Document</h3>
+                    <h3 class="t-centered">ATS Docs</h3>
                 </div>
                 <div class="pure-u-1-1">
                     <table class="pure-table pure-table-bordered">
@@ -1092,19 +1099,24 @@
                         <tbody>
                         <tr >
                             <td></td>
-                            <td><i class="fa fa-folder"></i>TNT</td>
+                            <td><i class="fa fa-folder"></i> Vendor management</td>
+                            <td></td>
+                        </tr>
+                        <tr >
+                            <td></td>
+                            <td>&nbsp;&nbsp;<i class="fa fa-folder"></i> TNT</td>
                             <td></td>
                         </tr>
 
                         <tr class="pure-table-odd">
-                            <td><input type="radio"/></td>
-                            <td>&nbsp;&nbsp;&nbsp;January_suzy_Invoice431.pdf</td>
+                            <td><input type="radio" name="group1" value="1"/></td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-file-o"></i> January_suzy_Invoice431.pdf</td>
                             <td>1/15/14</td>
                         </tr>
 
                         <tr>
-                            <td><input type="radio"/></td>
-                            <td>&nbsp;&nbsp;&nbsp;Febrauray_Frank_invoice332.pdf</td>
+                            <td><input type="radio" name="group1" value="2"/></td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-file-o"></i> Feb_Frank_invoice332.pdf</td>
                             <td>2/11/16</td>
                         </tr>
                         </tbody>
@@ -1168,6 +1180,8 @@
     </div>
 </div>
 </template>
+
+
 <template name="popup__arrange-payment">
 <div class="pure-g ">
     <div class="pure-u-12-24 popup">
