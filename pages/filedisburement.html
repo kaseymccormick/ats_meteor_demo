@@ -1,0 +1,1246 @@
+<template name="pay_file-disbursement">
+    <div class="pure-g">
+        <div class="pure-u-1-1 header__title">
+            <div class="pure-g">
+                <div class="pure-u-16-24 ">
+                    <h1>File Disbursement</h1>
+                </div>
+                <div class="pure-u-5-24 alert-box">
+                    <i class="fa fa-warning"> <b>2</b> new changes</i>
+                </div>
+
+                <div class="pure-u-1-24"></div>
+                <div class="pure-u-2-24">
+                    <a class="m-t-35 floatR pure-button button-success button-xsmall">Synchronize File</a>
+                </div>
+            </div>
+        </div>
+        <div class="pure-u-1-1 file-disb-info">
+            <div class="pure-g">
+                <div class="pure-u-1-3">
+
+                    <h3>Closing Information</h3>
+                    <ul class="fd-info-list">
+                        <li><b>Date Issued:</b> 4/15/15</li>
+                        <li><b>Closing Date</b>
+                            <a href="#" class="tooltip">
+                                <span class="red-text">TPS: 4/15/15 LOS: 4/16/15</span>
+                                <em class="red-text"> 4/16/15 </em><i class="fa fa-question-circle red-text"></i>
+                            </a>
+                        </li>
+                        <li><b>Disbursement Date:</b> 4/15/15</li>
+                    </ul>
+                    <dl>
+                        <dt><b>Property</b></dt>
+                        <dd>456 Theisen Ave</dd>
+                        <dd>Anytown St 12342</dd>
+                        <dd>City, State, Zip</dd>
+                    </dl>
+                    <a class="pure-button pure-button-primary button-xsmall" target="_blank" href="CDF-NPD160.PDF">View Closing Disclosure</a>
+                    <!--<a href="#" class="btn btn-lg btn-success"-->
+                    <!--data-toggle="modal"-->
+                    <!--data-target="#basicModal"> open Modal</a>-->
+                </div>
+                <div class="pure-u-1-3">
+                    <h3>Transaction Information</h3>
+                    <dl>
+                        <dt><b>Borrower</b></dt>
+                        <dd>Michael Jones </dd>
+                        <dd>123 Anywhere Street </dd>
+                        <dd>Anytown, UT 23456</dd>
+                        <dt><b>Borrower Settlement Agent:</b></dt>
+                    </dl>
+                    <dl>
+                        <dt><b>Seller</b></dt>
+                        <dd>Sarah Cole </dd>
+                        <dd>321 Main Street</dd>
+                        <dd>Anytown, UT 23466</dd>
+                        <dt><b>Seller Settlement Agent:</b></dt>
+                    </dl>
+                </div>
+                <div class="pure-u-1-3">
+                    <h3>Loan Information</h3>
+                    <ul class="fd-info-list">
+                        <li><b>Loan Term</b> 30 Years</li>
+                        <li><b>Purpose</b> Purchase</li>
+                        <li><b>Product</b> Fixed Rate</li>
+                        <li><b>Loan Type</b> Conventional</li>
+                        <li><b>Loan ID#</b> 234567845</li>
+                        <li><b>File ID#</b> 123456789</li>
+                        <li><b>MIC#</b> 00033456</li>
+                    </ul>
+                    <ul class="fd-docs"> <b>Other Documents</b>
+                        <li><a target="_blank" href="/ALTASettlement.pdf" ><i><u>ALTA Settlement Statement <i class="fa fa-external-link"></i></u></i></a></li>
+                    </ul>
+                    <a class="pure-button pure-button-primary button-xsmall m-t-10" href="/upload-doc">Upload other associated documents</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="pure-u-1-1 disb-stats">
+            <div class="pure-g">
+                <div class="pure-u-4-24 disb-stats__item sale-price">
+                    <b>Sale Price</b>
+                    <h2>160,000</h2>
+                </div>
+                <div class="pure-u-4-24 disb-stats__item loan">
+                    <b>Loan Amount Actual</b>
+                    <h2>160,000</h2>
+                    <h5>Scheduled:120,000</h5>
+                </div>
+                <div class="pure-u-4-24 disb-stats__item ">
+                    <b>Credits Actual</b>
+                    <h2>160,000</h2>
+                    <h5>Scheduled:120,000</h5>
+                </div>
+                <div class="pure-u-4-24 disb-stats__item debit">
+                    <b>Debits Actual</b>
+                    <h2>160,000</h2>
+                    <h5>Scheduled:120,000</h5>
+                </div>
+                <div class="pure-u-4-24 disb-stats__item balance">
+                    <b>Balance Actual</b>
+                    <h2>160,000</h2>
+                    <h5>Scheduled:120,000</h5>
+                </div>
+            </div>
+        </div>
+        <div class="pure-u-1-1 disb-list">
+
+            <table class="pure-table pure-table-horizontal">
+                <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Invoice</th>
+                    <th>Payee</th>
+                    <th>Amount</th>
+                    <th>Your Approval</th>
+                    <th>Payment Method</th>
+                    <th>Save</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td><i class="fa fa-circle c-orange"></i> Termite Inspection
+                    </td>
+                    <td>
+                        <a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>
+                    </td>
+                    <td>
+                <tr>
+                    <td>TNT Termite</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="payee" id="payee">
+                            <option value="0">Please Select</option>
+                            <optgroup label="Your Organizations">
+                                <option value="1">TNT Termite</option>
+                            </optgroup>
+                            <optgroup label="Your Individuals">
+                                <option value="2">T. N. Thompson</option>
+                            </optgroup>
+                            <optgroup label="Also on the platform">
+                                <option value="3">third</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <a href="/add-payee" class="pure-button button-xsmall button-success m-t-10">Add Payee</a>
+                </tr>
+                </td>
+                <td><h3 class="c-orange">$85.00</h3></td>
+                <td><input type="radio" class="toggle-yes" id="approve_yes_001231" name="approval_001231">
+                    <label for="approve_yes_001231">YES</label>
+                    <input type="radio" class="toggle-no" id="approve_no_001231" name="approval_001231">
+                    <label for="approve_no_001231">NO</label></td>
+                <td>
+                    <select name="payment" id="payment">
+                        <option value="0"><i>Please Select</i></option>
+                        <option value="1" disabled>Digital Check</option>
+                        <option value="2">Paper Check</option>
+                        <option value="3" disabled>ACH</option>
+                        <option value="4" disabled>Wire</option>
+                        <option value="5">Pay outside of platform</option>
+                        <option value="6" disabled>Hold for Aggregation</option>
+                        <option value="7" disabled>Transfer to Operating</option>
+                    </select>
+                    <br/>
+                    <a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>
+
+                </td>
+                <td><a href="" class="pure-button button-xsmall button-success"> Save</a></td>
+
+                </tr>
+
+
+                <!--row two-->
+                <tr class="pure-table-odd saved">
+                    <td><i class="fa fa-circle c-orange"></i> Appraisal Fee
+                    </td>
+                    <td>
+                        <a href="" class="c-orange">ResAppraisal.pdf <i class="fa fa-external-link"></i></a>
+                    </td>
+
+
+                    <td class="c-green">Residential Appraisal Services</td>
+
+
+
+                    <td><h3>$450.00</h3></td>
+                    <td>
+                        <label for="approve_yes_001231">YES</label>
+                    </td>
+                    <td>
+                <tr>
+                    <td class="c-green">Paper Check</td>
+                </tr>
+                <tr>
+                    <td> <b>From Account:</b> **3342</td>
+                </tr>
+                </td>
+                <td><a href="" class="pure-button button-xsmall button-gray"> Edit</a></td>
+
+                </tr>
+
+
+                <!--row three-->
+                <tr class="saved">
+                    <td>Flood Certification
+                    </td>
+                    <td>
+                        <a href="">flood.pdf <i class="fa fa-external-link"></i></a>
+                    </td>
+
+
+                    <td class="c-green">American Flood Research</td>
+
+
+
+                    <td><h3>$11.00</h3></td>
+                    <td>
+                        <label for="approve_yes_001231">YES</label>
+                    </td>
+                    <td>
+                <tr>
+                    <td class="c-green">Paper Check</td>
+                </tr>
+                <tr>
+                    <td> <b>From Account:</b> **3342</td>
+                </tr>
+                </td>
+                <td><a href="" class="pure-button button-xsmall button-gray"> Edit</a></td>
+
+                </tr>
+
+
+                <!--Row four-->
+                <tr class="pure-table-odd" >
+                    <td>Title - Escrow Closing Fee
+                    </td>
+                    <td>
+                        <a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>
+                    </td>
+                    <td>
+                <tr>
+                    <td>TitleCore National LLC</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="payee" id="payee">
+                            <option value="0">No matches Available</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <a href="/add-payee" class="pure-button button-xsmall button-success m-t-10">Add Payee</a>
+                </tr>
+                </td>
+                <td><h3 >$500.00</h3></td>
+                <td><input type="radio" class="toggle-yes" id="approve_yes_001231" name="approval_001231">
+                    <label for="approve_yes_001231">YES</label>
+                    <input type="radio" class="toggle-no" id="approve_no_001231" name="approval_001231">
+                    <label for="approve_no_001231">NO</label></td>
+                <td>
+                    <select name="payment" id="payment">
+                        <option value="0"><i>Please Select</i></option>
+                        <option value="1" disabled>Digital Check</option>
+                        <option value="2">Paper Check</option>
+                        <option value="3" disabled>ACH</option>
+                        <option value="4" disabled>Wire</option>
+                        <option value="5">Pay outside of platform</option>
+                        <option value="6" disabled>Hold for Aggregation</option>
+                        <option value="7" disabled>Transfer to Operating</option>
+                    </select>
+                    <br/>
+                    <a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>
+
+                </td>
+                <td><a href="" class="pure-button button-xsmall button-success"> Save</a></td>
+
+                </tr>
+
+                <!--row five-->
+                <tr>
+                    <td> Home Warranty
+                    </td>
+                    <td>
+                        <a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>
+                    </td>
+                    <td>
+                <tr>
+                    <td>Home Buyers Resale Warranty Corp.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="payee" id="payee">
+                            <option value="0">Please Select</option>
+
+                            <optgroup label="Your Individuals">
+                                <option value="2">Brady Warran</option>
+                            </optgroup>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <a href="/add-payee" class="pure-button button-xsmall button-success m-t-10">Add Payee</a>
+                </tr>
+                </td>
+                <td><h3 >$460.10</h3></td>
+                <td><input type="radio" class="toggle-yes" id="approve_yes_001231" name="approval_001231">
+                    <label for="approve_yes_001231">YES</label>
+                    <input type="radio" class="toggle-no" id="approve_no_001231" name="approval_001231">
+                    <label for="approve_no_001231">NO</label></td>
+                <td>
+                    <select name="payment" id="payment">
+                        <option value="0"><i>Please Select</i></option>
+                        <option value="1" disabled>Digital Check</option>
+                        <option value="2">Paper Check</option>
+                        <option value="3" disabled>ACH</option>
+                        <option value="4" disabled>Wire</option>
+                        <option value="5">Pay outside of platform</option>
+                        <option value="6" disabled>Hold for Aggregation</option>
+                        <option value="7" disabled>Transfer to Operating</option>
+                    </select>
+                    <br/>
+                    <a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>
+
+                </td>
+                <td><a href="" class="pure-button button-xsmall button-success"> Save</a></td>
+
+                </tr>
+
+                <!--row six-->
+                <tr class="pure-table-odd" >
+                    <td> Title - E - Recording Fee
+                    </td>
+                    <td>
+                        <a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>
+                    </td>
+                    <td>
+                <tr>
+                    <td>Simplefile / TCN Recordings Department</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="payee" id="payee">
+                            <option value="0">Please Select</option>
+                            <optgroup label="Your Organizations">
+                                <option value="1">Simplelife</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <a href="/add-payee" class="pure-button button-xsmall button-success m-t-10">Add Payee</a>
+                </tr>
+                </td>
+                <td><h3 >$10.00</h3></td>
+                <td><input type="radio" class="toggle-yes" id="approve_yes_001231" name="approval_001231">
+                    <label for="approve_yes_001231">YES</label>
+                    <input type="radio" class="toggle-no" id="approve_no_001231" name="approval_001231">
+                    <label for="approve_no_001231">NO</label></td>
+                <td>
+                    <select name="payment" id="payment">
+                        <option value="0"><i>Please Select</i></option>
+                        <option value="1" disabled>Digital Check</option>
+                        <option value="2">Paper Check</option>
+                        <option value="3" disabled>ACH</option>
+                        <option value="4" disabled>Wire</option>
+                        <option value="5">Pay outside of platform</option>
+                        <option value="6" disabled>Hold for Aggregation</option>
+                        <option value="7" disabled>Transfer to Operating</option>
+                    </select>
+                    <br/>
+                    <a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>
+
+                </td>
+                <td><a href="" class="pure-button button-xsmall button-success"> Save</a></td>
+
+                </tr>
+
+                <!--row 7-->
+                <tr>
+                    <td>Plot Plan
+                    </td>
+                    <td>
+                        <a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>
+                    </td>
+                    <td>
+                <tr>
+                    <td>Boundary Line Surveys</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="payee" id="payee">
+                            <option value="0">No matches Available</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <a href="/add-payee" class="pure-button button-xsmall button-success m-t-10">Add Payee</a>
+                </tr>
+                </td>
+                <td><h3 >$80.00</h3></td>
+                <td><input type="radio" class="toggle-yes" id="approve_yes_001231" name="approval_001231">
+                    <label for="approve_yes_001231">YES</label>
+                    <input type="radio" class="toggle-no" id="approve_no_001231" name="approval_001231">
+                    <label for="approve_no_001231">NO</label></td>
+                <td>
+                    <select name="payment" id="payment">
+                        <option value="0"><i>Please Select</i></option>
+                        <option value="1" disabled>Digital Check</option>
+                        <option value="2">Paper Check</option>
+                        <option value="3" disabled>ACH</option>
+                        <option value="4" disabled>Wire</option>
+                        <option value="5">Pay outside of platform</option>
+                        <option value="6" disabled>Hold for Aggregation</option>
+                        <option value="7" disabled>Transfer to Operating</option>
+                    </select>
+                    <br/>
+                    <a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>
+
+                </td>
+                <td><a href="" class="pure-button button-xsmall button-success"> Save</a></td>
+
+                </tr>
+
+                <!--start row 8-->
+                <tr class="pure-table-odd" >
+                    <td> Homeowners Insurance Premium
+                    </td>
+                    <td>
+                        <a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>
+                    </td>
+                    <td>
+                <tr>
+                    <td>Allstate</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="payee" id="payee">
+                            <option value="0">No matches Available</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <a href="/add-payee" class="pure-button button-xsmall button-success m-t-10">Add Payee</a>
+                </tr>
+                </td>
+                <td><h3 >$907.00</h3></td>
+                <td><input type="radio" class="toggle-yes" id="approve_yes_001231" name="approval_001231">
+                    <label for="approve_yes_001231">YES</label>
+                    <input type="radio" class="toggle-no" id="approve_no_001231" name="approval_001231">
+                    <label for="approve_no_001231">NO</label></td>
+                <td>
+                    <select name="payment" id="payment">
+                        <option value="0"><i>Please Select</i></option>
+                        <option value="1" disabled>Digital Check</option>
+                        <option value="2">Paper Check</option>
+                        <option value="3" disabled>ACH</option>
+                        <option value="4" disabled>Wire</option>
+                        <option value="5">Pay outside of platform</option>
+                        <option value="6" disabled>Hold for Aggregation</option>
+                        <option value="7" disabled>Transfer to Operating</option>
+                    </select>
+                    <br/>
+                    <a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>
+
+                </td>
+                <td><a href="" class="pure-button button-xsmall button-success"> Save</a></td>
+
+                </tr>
+
+                <!--start row 9-->
+                <tr>
+                    <td>Recording Fees
+                    </td>
+                    <td>
+                        <a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>
+                    </td>
+                    <td>
+                <tr>
+                    <td>Simplefile / TCN Recordings Department</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="payee" id="payee">
+                            <option value="0">Please Select</option>
+                            <optgroup label="Your Organizations">
+                                <option value="1">Simplelife</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <a href="/add-payee" class="pure-button button-xsmall button-success m-t-10">Add Payee</a>
+                </tr>
+                </td>
+                <td><h3 >$107.00</h3></td>
+                <td><input type="radio" class="toggle-yes" id="approve_yes_001231" name="approval_001231">
+                    <label for="approve_yes_001231">YES</label>
+                    <input type="radio" class="toggle-no" id="approve_no_001231" name="approval_001231">
+                    <label for="approve_no_001231">NO</label></td>
+                <td>
+                    <select name="payment" id="payment">
+                        <option value="0"><i>Please Select</i></option>
+                        <option value="1" disabled>Digital Check</option>
+                        <option value="2">Paper Check</option>
+                        <option value="3" disabled>ACH</option>
+                        <option value="4" disabled>Wire</option>
+                        <option value="5">Pay outside of platform</option>
+                        <option value="6" disabled>Hold for Aggregation</option>
+                        <option value="7" disabled>Transfer to Operating</option>
+                    </select>
+                    <br/>
+                    <a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>
+
+                </td>
+                <td><a href="" class="pure-button button-xsmall button-success"> Save</a></td>
+
+                </tr>
+
+                <!--start row 10-->
+
+                <tr class="pure-table-odd" >
+                    <td>Transfer Tax
+                    </td>
+                    <td>
+                        <a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>
+                    </td>
+                    <td>
+                <tr>
+                    <td>Simplefile / TCN Recordings Department</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="payee" id="payee">
+                            <option value="0">Please Select</option>
+                            <optgroup label="Your Organizations">
+                                <option value="1">Simplelife</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <a href="/add-payee" class="pure-button button-xsmall button-success m-t-10">Add Payee</a>
+                </tr>
+                </td>
+                <td><h3 >$1125.00</h3></td>
+                <td><input type="radio" class="toggle-yes" id="approve_yes_001231" name="approval_001231">
+                    <label for="approve_yes_001231">YES</label>
+                    <input type="radio" class="toggle-no" id="approve_no_001231" name="approval_001231">
+                    <label for="approve_no_001231">NO</label></td>
+                <td>
+                    <select name="payment" id="payment">
+                        <option value="0"><i>Please Select</i></option>
+                        <option value="1" disabled>Digital Check</option>
+                        <option value="2">Paper Check</option>
+                        <option value="3" disabled>ACH</option>
+                        <option value="4" disabled>Wire</option>
+                        <option value="5">Pay outside of platform</option>
+                        <option value="6" disabled>Hold for Aggregation</option>
+                        <option value="7" disabled>Transfer to Operating</option>
+                    </select>
+                    <br/>
+                    <a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>
+
+                </td>
+                <td><a href="" class="pure-button button-xsmall button-success"> Save</a></td>
+
+                </tr>
+
+                <!--start row 11-->
+                <tr class="saved">
+                    <td>Initial Escrow Payment - Homeowner's Insurance
+                    </td>
+                    <td>
+                        <a href="">insurance.pdf <i class="fa fa-external-link"></i></a>
+                    </td>
+
+
+                    <td class="c-green">Kussman Bank</td>
+
+
+
+                    <td><h3>$226.74</h3></td>
+                    <td>
+                        <label for="approve_yes_001231">YES</label>
+                    </td>
+                    <td>
+                <tr>
+                    <td class="c-green">Paper Check</td>
+                </tr>
+                <tr>
+                    <td> <b>From Account:</b> **3342</td>
+                </tr>
+                </td>
+                <td><a href="" class="pure-button button-xsmall button-gray"> Edit</a></td>
+
+                </tr>
+
+                <!--start row 12-->
+                <tr class="pure-table-odd saved">
+                    <td>Initial Escrow Payment - Property Taxes
+                    </td>
+                    <td>
+                        <a href="">proptaxescrow.pdf <i class="fa fa-external-link"></i></a>
+                    </td>
+
+
+                    <td class="c-green">Kussman Bank</td>
+
+
+
+                    <td><h3>$375.00</h3></td>
+                    <td>
+                        <label for="approve_yes_001231">YES</label>
+                    </td>
+                    <td>
+                <tr>
+                    <td class="c-green">Paper Check</td>
+                </tr>
+                <tr>
+                    <td> <b>From Account:</b> **3342</td>
+                </tr>
+                </td>
+                <td><a href="" class="pure-button button-xsmall button-gray"> Edit</a></td>
+
+                </tr>
+
+                <!--end row 12-->
+
+                <!--start row 13-->
+                <tr class=" saved">
+                    <td>Property Taxes
+                    </td>
+                    <td>
+                        <a href="">dcttaxes.pdf <i class="fa fa-external-link"></i></a>
+                    </td>
+
+
+                    <td class="c-green">Douglas County Treasurer</td>
+
+
+
+                    <td><h3>$1500.00</h3></td>
+                    <td>
+                        <label for="approve_yes_001231">YES</label>
+                    </td>
+                    <td>
+                <tr>
+                    <td class="c-green">Paper Check</td>
+                </tr>
+                <tr>
+                    <td> <b>From Account:</b> **3342</td>
+                </tr>
+                </td>
+                <td><a href="" class="pure-button button-xsmall button-gray"> Edit</a></td>
+
+                </tr>
+
+                <!--end row 13-->
+
+                <!--start row 14-->
+                <tr class="pure-table-odd" >
+                    <td> Title - Owner's Title Insurance
+                    </td>
+                    <td>
+                        <a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>
+                    </td>
+                    <td>
+                <tr>
+                    <td>TitleCore National LLC</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="payee" id="payee">
+                            <option value="0">No matches Available</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <a href="/add-payee" class="pure-button button-xsmall button-success m-t-10">Add Payee</a>
+                </tr>
+                </td>
+                <td><h3 >$337.50</h3></td>
+                <td><input type="radio" class="toggle-yes" id="approve_yes_001231" name="approval_001231">
+                    <label for="approve_yes_001231">YES</label>
+                    <input type="radio" class="toggle-no" id="approve_no_001231" name="approval_001231">
+                    <label for="approve_no_001231">NO</label></td>
+                <td>
+                    <select name="payment" id="payment">
+                        <option value="0"><i>Please Select</i></option>
+                        <option value="1" disabled>Digital Check</option>
+                        <option value="2">Paper Check</option>
+                        <option value="3" disabled>ACH</option>
+                        <option value="4" disabled>Wire</option>
+                        <option value="5">Pay outside of platform</option>
+                        <option value="6" disabled>Hold for Aggregation</option>
+                        <option value="7" disabled>Transfer to Operating</option>
+                    </select>
+                    <br/>
+                    <a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>
+
+                </td>
+                <td><a href="" class="pure-button button-xsmall button-success"> Save</a></td>
+
+                </tr>
+                <!--end row 14-->
+
+                <!--start row 15-->
+
+                <tr>
+                    <td> Title - Settlement Closing Fee
+                    </td>
+                    <td>
+                        <a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>
+                    </td>
+                    <td>
+                <tr>
+                    <td>TitleCore National LLC</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="payee" id="payee">
+                            <option value="0">No matches Available</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <a href="/add-payee" class="pure-button button-xsmall button-success m-t-10">Add Payee</a>
+                </tr>
+                </td>
+                <td><h3 >$250.00</h3></td>
+                <td><input type="radio" class="toggle-yes" id="approve_yes_001231" name="approval_001231">
+                    <label for="approve_yes_001231">YES</label>
+                    <input type="radio" class="toggle-no" id="approve_no_001231" name="approval_001231">
+                    <label for="approve_no_001231">NO</label></td>
+                <td>
+                    <select name="payment" id="payment">
+                        <option value="0"><i>Please Select</i></option>
+                        <option value="1" disabled>Digital Check</option>
+                        <option value="2">Paper Check</option>
+                        <option value="3" disabled>ACH</option>
+                        <option value="4" disabled>Wire</option>
+                        <option value="5">Pay outside of platform</option>
+                        <option value="6" disabled>Hold for Aggregation</option>
+                        <option value="7" disabled>Transfer to Operating</option>
+                    </select>
+                    <br/>
+                    <a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>
+
+                </td>
+                <td><a href="" class="pure-button button-xsmall button-success"> Save</a></td>
+
+                </tr>
+
+                <!--end row 15-->
+
+                <!--start row 16-->
+
+                <tr class="pure-table-odd" >
+                    <td> Title - NE Insured Closing
+                    </td>
+                    <td>
+                        <a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>
+                    </td>
+                    <td>
+                <tr>
+                    <td>TitleCore National LLC</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="payee" id="payee">
+                            <option value="0">No matches Available</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <a href="/add-payee" class="pure-button button-xsmall button-success m-t-10">Add Payee</a>
+                </tr>
+                </td>
+                <td><h3 >$25.00</h3></td>
+                <td><input type="radio" class="toggle-yes" id="approve_yes_001231" name="approval_001231">
+                    <label for="approve_yes_001231">YES</label>
+                    <input type="radio" class="toggle-no" id="approve_no_001231" name="approval_001231">
+                    <label for="approve_no_001231">NO</label></td>
+                <td>
+                    <select name="payment" id="payment">
+                        <option value="0"><i>Please Select</i></option>
+                        <option value="1" disabled>Digital Check</option>
+                        <option value="2">Paper Check</option>
+                        <option value="3" disabled>ACH</option>
+                        <option value="4" disabled>Wire</option>
+                        <option value="5">Pay outside of platform</option>
+                        <option value="6" disabled>Hold for Aggregation</option>
+                        <option value="7" disabled>Transfer to Operating</option>
+                    </select>
+                    <br/>
+                    <a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>
+
+                </td>
+                <td><a href="" class="pure-button button-xsmall button-success"> Save</a></td>
+
+                </tr>
+
+                <!--end row 16-->
+
+                <!--start row 17-->
+
+                <tr>
+                    <td> Title - Lender's Title Insurance
+                    </td>
+                    <td>
+                        <a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>
+                    </td>
+                    <td>
+                <tr>
+                    <td>TitleCore National LLC</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="payee" id="payee">
+                            <option value="0">No matches Available</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <a href="/add-payee" class="pure-button button-xsmall button-success m-t-10">Add Payee</a>
+                </tr>
+                </td>
+                <td><h3 >$555.00</h3></td>
+                <td><input type="radio" class="toggle-yes" id="approve_yes_001231" name="approval_001231">
+                    <label for="approve_yes_001231">YES</label>
+                    <input type="radio" class="toggle-no" id="approve_no_001231" name="approval_001231">
+                    <label for="approve_no_001231">NO</label></td>
+                <td>
+                    <select name="payment" id="payment">
+                        <option value="0"><i>Please Select</i></option>
+                        <option value="1" disabled>Digital Check</option>
+                        <option value="2">Paper Check</option>
+                        <option value="3" disabled>ACH</option>
+                        <option value="4" disabled>Wire</option>
+                        <option value="5">Pay outside of platform</option>
+                        <option value="6" disabled>Hold for Aggregation</option>
+                        <option value="7" disabled>Transfer to Operating</option>
+                    </select>
+                    <br/>
+                    <a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>
+
+                </td>
+                <td><a href="" class="pure-button button-xsmall button-success"> Save</a></td>
+
+                </tr>
+
+                <!--end row 17-->
+
+                <!--start row 18-->
+
+                <tr class="pure-table-odd" >
+                    <td> Title - Endorsement - COMP 100
+                    </td>
+                    <td>
+                        <a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>
+                    </td>
+                    <td>
+                <tr>
+                    <td>TitleCore National LLC</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="payee" id="payee">
+                            <option value="0">No matches Available</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <a href="/add-payee" class="pure-button button-xsmall button-success m-t-10">Add Payee</a>
+                </tr>
+                </td>
+                <td><h3 >$25.00</h3></td>
+                <td><input type="radio" class="toggle-yes" id="approve_yes_001231" name="approval_001231">
+                    <label for="approve_yes_001231">YES</label>
+                    <input type="radio" class="toggle-no" id="approve_no_001231" name="approval_001231">
+                    <label for="approve_no_001231">NO</label></td>
+                <td>
+                    <select name="payment" id="payment">
+                        <option value="0"><i>Please Select</i></option>
+                        <option value="1" disabled>Digital Check</option>
+                        <option value="2">Paper Check</option>
+                        <option value="3" disabled>ACH</option>
+                        <option value="4" disabled>Wire</option>
+                        <option value="5">Pay outside of platform</option>
+                        <option value="6" disabled>Hold for Aggregation</option>
+                        <option value="7" disabled>Transfer to Operating</option>
+                    </select>
+                    <br/>
+                    <a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>
+
+                </td>
+                <td><a href="" class="pure-button button-xsmall button-success"> Save</a></td>
+
+                </tr>
+
+                <!--end row 18-->
+
+                <!--start row 19-->
+
+                <tr>
+                    <td> Title - END Location w/o Survey
+                    </td>
+                    <td>
+                        <a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>
+                    </td>
+                    <td>
+                <tr>
+                    <td>TitleCore National LLC</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="payee" id="payee">
+                            <option value="0">No matches Available</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <a href="/add-payee" class="pure-button button-xsmall button-success m-t-10">Add Payee</a>
+                </tr>
+                </td>
+                <td><h3 >$25.00</h3></td>
+                <td><input type="radio" class="toggle-yes" id="approve_yes_001231" name="approval_001231">
+                    <label for="approve_yes_001231">YES</label>
+                    <input type="radio" class="toggle-no" id="approve_no_001231" name="approval_001231">
+                    <label for="approve_no_001231">NO</label></td>
+                <td>
+                    <select name="payment" id="payment">
+                        <option value="0"><i>Please Select</i></option>
+                        <option value="1" disabled>Digital Check</option>
+                        <option value="2">Paper Check</option>
+                        <option value="3" disabled>ACH</option>
+                        <option value="4" disabled>Wire</option>
+                        <option value="5">Pay outside of platform</option>
+                        <option value="6" disabled>Hold for Aggregation</option>
+                        <option value="7" disabled>Transfer to Operating</option>
+                    </select>
+                    <br/>
+                    <a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>
+
+                </td>
+                <td><a href="" class="pure-button button-xsmall button-success"> Save</a></td>
+
+                </tr>
+
+                <!--end row 19-->
+
+                <!--start row 20-->
+
+                <tr class="pure-table-odd" >
+                    <td> Title - ALTA 8.1-06 END
+                    </td>
+                    <td>
+                        <a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>
+                    </td>
+                    <td>
+                <tr>
+                    <td>TitleCore National LLC</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="payee" id="payee">
+                            <option value="0">No matches Available</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <a href="/add-payee" class="pure-button button-xsmall button-success m-t-10">Add Payee</a>
+                </tr>
+                </td>
+                <td><h3 >$25.00</h3></td>
+                <td><input type="radio" class="toggle-yes" id="approve_yes_001231" name="approval_001231">
+                    <label for="approve_yes_001231">YES</label>
+                    <input type="radio" class="toggle-no" id="approve_no_001231" name="approval_001231">
+                    <label for="approve_no_001231">NO</label></td>
+                <td>
+                    <select name="payment" id="payment">
+                        <option value="0"><i>Please Select</i></option>
+                        <option value="1" disabled>Digital Check</option>
+                        <option value="2">Paper Check</option>
+                        <option value="3" disabled>ACH</option>
+                        <option value="4" disabled>Wire</option>
+                        <option value="5">Pay outside of platform</option>
+                        <option value="6" disabled>Hold for Aggregation</option>
+                        <option value="7" disabled>Transfer to Operating</option>
+                    </select>
+                    <br/>
+                    <a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>
+
+                </td>
+                <td><a href="" class="pure-button button-xsmall button-success"> Save</a></td>
+
+                </tr>
+
+                <!--end row 20-->
+
+
+                </tbody>
+            </table>
+
+        </div>
+        <div class="pure-u-1-1 disb-history header__title">
+            <div class="pure-g">
+                <div class="pure-u-20-24">
+                    <h1>History</h1>
+                </div>
+                <div class="pure-u-1-24"></div>
+                <div class="pure-u-2-24">
+                    <a class="m-t-35 floatR pure-button button-success button-xsmall">Add new Comment</a>
+                </div>
+            </div>
+        </div>
+        <div class="pure-u-1-1 disb-history__cta">
+            <div class="pure-g">
+                <div class="pure-u-17-24">
+
+                </div>
+                <div class="pure-u-2-24">
+                    <a href="" class="pure-button pure-button-primary button-xsmall">View Comments Only</a>
+                </div>
+                <div class="pure-u-1-24">
+
+                </div>
+                <div class="pure-u-2-24">
+                    <input type="text" placeholder="search"/>
+                </div>
+            </div>
+        </div>
+        <div class="pure-u-1-1 disb-history__content">
+            <div class="pure-g">
+                <div class="pure-u-1-1">
+                    <div class="pure-g history__content__item">
+                        <div class="pure-u-3-24">
+                            <img class="comment-user-profile" src="/FrankSampson.png" alt="frank sampson"/>
+                        </div>
+                        <div class="pure-u-21-24">
+                            <p><b class="c-green">Frank Sampson</b> uploaded <u>ResAppraisal.pdf</u> on 3/15/15</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pure-u-1-1">
+                    <div class="pure-g history__content__item">
+                        <div class="pure-u-3-24">
+                            <img class="comment-user-profile" src="/ChuckRemy.png" alt="Frank Sampson"/>
+                        </div>
+                        <div class="pure-u-21-24">
+                            <p><b class="c-green">Chuck Remy</b> Approved <i>Initial Excrow Payment - Homeowner's Insurance</i> on 3/10/15</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pure-u-1-1">
+                    <div class="pure-g history__content__item">
+                        <div class="pure-u-3-24">
+                            <img class="comment-user-profile" src="/ChuckRemy.png" alt="Frank Sampson"/>
+                        </div>
+                        <div class="pure-u-21-24">
+                            <p><b class="c-green">Chuck Remy</b> Approved <i>Initial Excrow Payment - Property Taxes</i> on 3/10/15</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pure-u-1-1">
+                    <div class="pure-g history__content__item">
+                        <div class="pure-u-3-24">
+                            <img class="comment-user-profile" src="/ChuckRemy.png" alt="Frank Sampson"/>
+                        </div>
+                        <div class="pure-u-21-24">
+                            <p><b class="c-green">Chuck Remy</b> Approved <i>Property Taxes</i> on 3/10/15</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pure-u-1-1 cta">
+
+            <a class="pure-button pure-button-disabled floatR m-35" href="#">Disburse Funds</a>
+
+            <a class="pure-button pure-button-primary floatR m-35" href="#">Submit</a>
+
+
+        </div>
+    </div>
+</template>
+
+<template name="popup__upload_document">
+    <div class="pure-g ">
+        <div class="pure-u-13-24 popup">
+            <div class="pure-g">
+                <div class="pure-u-1-1 header__title">
+                    <h3 class="t-centered">ATS Docs</h3>
+                </div>
+                <div class="pure-u-1-1">
+                    <table class="pure-table pure-table-bordered">
+                        <thead>
+                        <tr>
+                            <th>Selected</th>
+                            <th>Name</th>
+                            <th>Date Created</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr >
+                            <td></td>
+                            <td><i class="fa fa-folder"></i> Vendor management</td>
+                            <td></td>
+                        </tr>
+                        <tr >
+                            <td></td>
+                            <td>&nbsp;&nbsp;<i class="fa fa-folder"></i> TNT</td>
+                            <td></td>
+                        </tr>
+
+                        <tr class="pure-table-odd">
+                            <td><input type="radio" name="group1" value="1"/></td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-file-o"></i> January_suzy_Invoice431.pdf</td>
+                            <td>1/15/14</td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="radio" name="group1" value="2"/></td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-file-o"></i> Feb_Frank_invoice332.pdf</td>
+                            <td>2/11/16</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="pure-u-1-2 m-t-10 ">
+                    <a href="/view-disb" class="pure-button pure-button-primary ">From Computer</a>
+                </div>
+                <div class="pure-u-1-2 m-t-10 ">
+                    <a href="/view-disb" class="pure-button button-success floatR">Attach</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+<template name="popup__add-payee">
+    <div class="pure-g">
+        <div class="pure-u-12-24 popup">
+            <div class="pure-u-1-1 header__title">
+                <h3 class="t-centered"> Add Payee</h3>
+            </div>
+            <div class="pure-u-1-1">
+                <form class="pure-form pure-form-stacked">
+                    <label for="search">Search on the platform</label>
+                    <input class="pure-input-1" type="text"/>
+                </form>
+            </div>
+            <div class="pure-u-1-1">
+                <form class="pure-form pure-form-stacked">
+                    <fieldset>
+                        <legend><h3>Add Payee to the platform</h3></legend>
+
+                        <label for="email">Email</label>
+                        <input class="pure-input-1" id="email" type="email" placeholder="Email">
+
+                        <label for="Fname">First Name</label>
+                        <input class="pure-input-1" id="Fname" type="text">
+
+                        <label for="Lname">Last Name</label>
+                        <input class="pure-input-1" id="Lname" type="text"/>
+
+                        <label for="org">Organization name</label>
+                        <input class="pure-input-1" type="text"/>
+
+                        <label for="org address">Organization Address</label>
+                        <input class="pure-input-1" placeholder="address line 1"  type="text"/>
+
+                        <input class="pure-input-1" placeholder="city" type="text"/>
+                        <input class="pure-input-1" placeholder="state" type="text"/>
+                        <input class="pure-input-1" placeholder="zip" type="text"/>
+
+                    </fieldset>
+                </form>
+            </div>
+            <div class="pure-u-1-1 m-t-35">
+                <a href="/view-disb" class="pure-button button-gray ">Cancel</a>
+
+                <a href="/view-disb" class="pure-button button-success floatR">Add</a>
+            </div>
+
+        </div>
+    </div>
+</template>
+
+
+<template name="popup__arrange-payment">
+    <div class="pure-g ">
+        <div class="pure-u-12-24 popup">
+            <div class="pure-g">
+                <div class="pure-u-1-1 header__title">
+                    <h3 class="t-centered">Arrange Payment</h3>
+                </div>
+                <div class="pure-u-1-2">
+                    <b>Payment type:</b> Paper Check
+                    <br/>
+                    <b>From Account:</b>
+                    <select name="acct" id="">
+                        <option value="1">**4435</option>
+                        <option value="2">**5523</option>
+                    </select>
+                </div>
+                <div class="pure-u-1-2">
+
+                    <ul class="ul-no-style"><b>To</b> Payee
+                        <li>Address Line 1</li>
+                        <li>Address Line 2</li>
+                        <li>Suite</li>
+                        <li>City, State, Zip</li>
+                    </ul>
+                </div>
+
+                <div class="pure-u-3-5">
+                </div>
+                <div class="pure-u-1-5 m-t-35">
+                    <a href="/view-disb" class="pure-button button-gray ">Cancel</a>
+                </div>
+                <div class="pure-u-1-5 m-t-35">
+                    <a href="/view-disb" class="pure-button button-success">Submit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
