@@ -1,9 +1,20 @@
 body{
     color:#616161;
 }
-p{
-    font-size: 14px;
+/* Default styles */
+p {
+    font-family: Roboto;
+    font-size: 14pt;
+    color: #616161;
+    line-height: 1.5em;
 }
+
+/*a {*/
+    /*font-family: inherit;*/
+    /*font-size: inherit;*/
+    /*text-decoration: underline;*/
+    /*color: #0072bc;*/
+/*}*/
 a, a i{
     text-decoration: none;
 }
@@ -301,4 +312,7 @@ i.fa.fa-upload.fa-2x {
 }
 .pure-table-horizontal td {
     padding: 5px;
+}
+.c-61{
+    color: #616161;
 }

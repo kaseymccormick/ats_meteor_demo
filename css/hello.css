@@ -23,7 +23,7 @@ p{
     color:white;
 }
 .header__title, .header-plus{
-    border-bottom:1px solid #616161;
+    /*border-bottom:1px solid #616161;*/
     margin-bottom:10px;
 }
 

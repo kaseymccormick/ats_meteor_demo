@@ -1,138 +1,198 @@
 <template name="dashboard">
+
+        <!--&lt;!&ndash;the bell, setting call question book&ndash;&gt;-->
+        <!--<div class="pure-g top-navigation">-->
+            <!--<div class="pure-u-4-24"></div>-->
+            <!--<div class="pure-u-15-24 top-navigation__app-title">-->
+                <!--<i class="fa fa-bars fa-lg">  </i>-->
+            <!--</div>-->
+            <!--<div class="pure-u-4-24">-->
+                <!--<div class="pure-menu pure-menu-horizontal floatR ">-->
+                    <!--&lt;!&ndash;<a href="#" class="pure-menu-heading pure-menu-link">BRAND</a>&ndash;&gt;-->
+                    <!--<ul class="pure-menu-list">-->
+                        <!--<li class="pure-menu-item"><a href="https://localhost/#" class="pure-menu-link"><i class="fa fa-bell fa-lg"></i></a></li>-->
+                        <!--<li class="pure-menu-item"><a href="https://localhost/#" class="pure-menu-link"><i class="fa fa-gear fa-lg"></i></a></li>-->
+                        <!--<li class="pure-menu-item"><a href="https://localhost/#" class="pure-menu-link"><i class="fa fa-phone fa-lg"></i></a></li>-->
+                        <!--<li class="pure-menu-item"><a href="https://localhost/#" class="pure-menu-link"><i class="fa fa-question fa-lg"></i></a></li>-->
+                        <!--<li class="pure-menu-item"><a href="https://localhost/#" class="pure-menu-link"><i class="fa fa-book fa-lg"></i></a></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="pure-u-1-24"></div>-->
+        <!--</div>-->
+        <!--<div class="clear"></div>-->
+    <!--</header>-->
     <div class="pure-g">
-        <!--dashboard update informaiton-->
-        <!--<div class="pure-u-1-1">-->
-            <!--<div class="pure-g header">-->
-                <!--<div class="pure-u-23-24 header__title">-->
-                <!--<h1>My Information</h1>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="pure-u-11-24 information_individual">-->
-            <!--<div class="pure-g">-->
-
-                    <!--<div class="pure-u-1-1 line-under">-->
-                        <!--<h3>Personal Information</h3>-->
-                    <!--</div>-->
-
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="pure-u-2-24"></div>-->
-        <!--<div class="pure-u-11-24 information_organization">-->
-            <!--<div class="pure-g">-->
-                <!--<div class="pure-u-1-1 line-under">-->
-                    <!--<h3>My Employer Information</h3>-->
-                <!--</div>-->
-            <!--</div>-->
-
-        <!--</div>-->
-        <div class="pure-u-1-1 ">
-            <div class="pure-g header">
 
 
-                <div class="pure-u-24-24 header__title">
-                    <h1>Notification Center</h1>
-                </div>
-
-                <div class="pure-u-1-24"></div>
-            </div>
-            <div class="pure-g notification">
-                <div class="pure-u-1-1 notification__item">
-                    <div class="pure-g">
-                    <div class="pure-u-3-24 notification__item__icon">
-                        <i class="fa fa-check fa-2x good"></i>
+        <div class="pure-u-1-1 page-content">
+            <main>
+                <div id="profile_wrapper">
+                    <div id="sso_profile">
+                        <h1><span>My Profile</span></h1>
+                        <div class="profile_name">Don Tomlinson</div>
+                        <a id="edit_profile" href="https://localhost/#"></a><br style="clear: both;"><br>
+                        <b>Personal Email</b><br>
+                        demodemodemo@yyy.com<br><br>
+                        <b>Work Email</b><br>
+                        nolan.hemmatazad@atssecured.com<br><br>
+                        <b>Work Phone</b><br>
+                        1.345.234.5345 ext. 3124<br><br>
+                        <a class="pure-button pure-button-primary" href="https://localhost/#">View Full Profile</a>
                     </div>
-                    <div class="pure-u-16-24 notification__item__description">
-                        <h4><em class="green">Sally Brimington</em> approved <a href="#">security plan</a> for your Vendor application</h4>
-                        <p class="timestamp">Friday March 11th, 2016 2:53PM</p>
-
-                    </div>
-                        <div class="pure-u-4-24 notification__item__cta">
-                            <a href="/organization_profile" class="pure-button pure-button-primary button-xsmall">View Organizaiton summary</a>
-
+                    <div id="org_profile">
+                        <h1><span>My Organization</span></h1>
+                        <div class="profile_name">Dandy Man's Rib Shack</div><br>
+                        <div id="org_address">
+                            29381 Testers Dr<br>
+                            Bldg 120<br>
+                            Suite 300<br>
+                            Albequerque, New Mexico<br>
+                            United States
                         </div>
-                    <div class="pure-u-1-24"></div>
+                        <a class="pure-button pure-button-primary" href="https://localhost/#">View Full Profile</a>
                     </div>
                 </div>
-
-                <div class="pure-u-1-1 notification__item">
-                    <div class="pure-g">
-                        <div class="pure-u-3-24 notification__item__icon">
-                            <i class="fa fa-circle fa-2x warning"></i>
-                        </div>
-                        <div class="pure-u-16-24 notification__item__description">
-                            <h4><em class="green">Sally Brimington</em> sent you a message</h4>
-                            <p class="timestamp">Friday March 11th, 2016 09:22AM</p>
-
-                        </div>
-                        <div class="pure-u-4-24 notification__item__cta">
-                            <a href="#" class="pure-button pure-button-primary button-xsmall">View Message</a>
-
-                        </div>
-                        <div class="pure-u-1-24">
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="pure-u-1-1 notification__item">
-                    <div class="pure-g">
-                        <div class="pure-u-3-24 notification__item__icon">
-                            <i class="fa fa-warning fa-2x attention"></i>
-                        </div>
-                        <div class="pure-u-16-24 notification__item__description">
-                            <h4><em class="green">Sally Brimington</em> denied <a href="#"> Tier 1 Assessment</a> for your Vendor application</h4>
-                            <p class="timestamp">Friday March 11th, 2016 09:22AM</p>
-                        </div>
-                        <div class="pure-u-4-24 notification__item__cta">
-                            <a href="/organization_profile" class="pure-button pure-button-primary button-xsmall">View Organizaiton summary</a>
-
-                        </div>
-                        <div class="pure-u-1-24 notification__item__dismiss">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="pure-u-1-1 notification__item">
-                    <div class="pure-g">
-                        <div class="pure-u-3-24 notification__item__icon">
-                            <i class="fa fa-question fa-2x "></i>
-                        </div>
-                        <div class="pure-u-16-24 notification__item__description">
-                            <h4><em class="green">Fred Zvotskiak</em> requested additional address information</h4>
-                            <p class="timestamp">Friday March 11th, 2016 09:22AM</p>
-
-                        </div>
-                        <div class="pure-u-4-24 notification__item__cta">
-                            <a href="#" class="pure-button button-fail button-xsmall">deny</a>
-                            <a href="#" class="pure-button button-success button-xsmall">approve</a>
-
-
-                        </div>
-                        <div class="pure-u-1-24"></div>
-                    </div>
-                </div>
-
-                <div class="pure-u-1-1 notification__item">
-                    <div class="pure-g">
-                        <div class="pure-u-3-24 notification__item__icon">
-                            <i class="fa fa-question fa-2x "></i>
-                        </div>
-                        <div class="pure-u-16-24 notification__item__description">
-                            <h4><em class="green">Sam Clifton</em> requested additional employment information</h4>
-                            <p class="timestamp">Friday March 10th, 2016 01:12PM</p>
-
-                        </div>
-                        <div class="pure-u-4-24 notification__item__cta">
-                            <a href="#" class="pure-button button-fail button-xsmall">deny</a>
-                            <a href="#" class="pure-button button-success button-xsmall">approve</a>
-
-
-                        </div>
-                        <div class="pure-u-1-24"></div>
-                    </div>
-                </div>
-            </div>
+                <h1 id="notifications_header"><span>Notifications</span></h1>
+                <div class="notification">
+                    <span class="fa_icon" href=""></span>
+                    <a class="sso_profile" href="https://localhost/#">Kumar Ramalingam</a> sent you a message.<br>
+                    <i>Saturday , March     26th, 2016 at 12:03am</i>
+                    <a class="action_button pure-button pure-button-primary" href="https://localhost/view/?id=2&amp;p=0">View Message</a>	<a class="archive" href="https://localhost/archive_notification/?id=2&amp;p=0"></a></div>
+                <div class="notification">
+                    <span class="fa_icon" href=""></span>
+                    <a class="sso_profile" href="https://localhost/#">Kumar Ramalingam</a> sent you a message.<br>
+                    <i>Tuesday  , March     22nd, 2016 at 12:03am</i>
+                    <a class="action_button pure-button pure-button-primary" href="https://localhost/view/?id=1&amp;p=0">View Message</a>	<a class="archive" href="https://localhost/archive_notification/?id=1&amp;p=0"></a></div>
+                <a href="https://localhost/#" class="pure-button disabled_link">Previous</a>
+                <span class="pure-button page_number">Page 1</span>
+                <a href="https://localhost/#" class="pure-button disabled_link">Next</a><br><br>
+                <a class="pure-button archive_button" href="https://localhost/archive">Archived Notifcations</a>
+            </main>
         </div>
+
+        <div class="pure-u-1-24">
+            <!--space for right hand side-->
+        </div>
+
     </div>
+
+
+
+
+
+
+
+
+    <!--<div class="pure-g">-->
+        <!---->
+        <!--<div class="pure-u-1-1 ">-->
+            <!--<div class="pure-g header">-->
+
+
+                <!--<div class="pure-u-24-24 header__title">-->
+                    <!--<h1>Notification Center</h1>-->
+                <!--</div>-->
+
+                <!--<div class="pure-u-1-24"></div>-->
+            <!--</div>-->
+            <!--<div class="pure-g notification">-->
+                <!--<div class="pure-u-1-1 notification__item">-->
+                    <!--<div class="pure-g">-->
+                    <!--<div class="pure-u-3-24 notification__item__icon">-->
+                        <!--<i class="fa fa-check fa-2x good"></i>-->
+                    <!--</div>-->
+                    <!--<div class="pure-u-16-24 notification__item__description">-->
+                        <!--<h4><em class="green">Sally Brimington</em> approved <a href="#">security plan</a> for your Vendor application</h4>-->
+                        <!--<p class="timestamp">Friday March 11th, 2016 2:53PM</p>-->
+
+                    <!--</div>-->
+                        <!--<div class="pure-u-4-24 notification__item__cta">-->
+                            <!--<a href="/organization_profile" class="pure-button pure-button-primary button-xsmall">View Organizaiton summary</a>-->
+
+                        <!--</div>-->
+                    <!--<div class="pure-u-1-24"></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="pure-u-1-1 notification__item">-->
+                    <!--<div class="pure-g">-->
+                        <!--<div class="pure-u-3-24 notification__item__icon">-->
+                            <!--<i class="fa fa-circle fa-2x warning"></i>-->
+                        <!--</div>-->
+                        <!--<div class="pure-u-16-24 notification__item__description">-->
+                            <!--<h4><em class="green">Sally Brimington</em> sent you a message</h4>-->
+                            <!--<p class="timestamp">Friday March 11th, 2016 09:22AM</p>-->
+
+                        <!--</div>-->
+                        <!--<div class="pure-u-4-24 notification__item__cta">-->
+                            <!--<a href="#" class="pure-button pure-button-primary button-xsmall">View Message</a>-->
+
+                        <!--</div>-->
+                        <!--<div class="pure-u-1-24">-->
+
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="pure-u-1-1 notification__item">-->
+                    <!--<div class="pure-g">-->
+                        <!--<div class="pure-u-3-24 notification__item__icon">-->
+                            <!--<i class="fa fa-warning fa-2x attention"></i>-->
+                        <!--</div>-->
+                        <!--<div class="pure-u-16-24 notification__item__description">-->
+                            <!--<h4><em class="green">Sally Brimington</em> denied <a href="#"> Tier 1 Assessment</a> for your Vendor application</h4>-->
+                            <!--<p class="timestamp">Friday March 11th, 2016 09:22AM</p>-->
+                        <!--</div>-->
+                        <!--<div class="pure-u-4-24 notification__item__cta">-->
+                            <!--<a href="/organization_profile" class="pure-button pure-button-primary button-xsmall">View Organizaiton summary</a>-->
+
+                        <!--</div>-->
+                        <!--<div class="pure-u-1-24 notification__item__dismiss">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="pure-u-1-1 notification__item">-->
+                    <!--<div class="pure-g">-->
+                        <!--<div class="pure-u-3-24 notification__item__icon">-->
+                            <!--<i class="fa fa-question fa-2x "></i>-->
+                        <!--</div>-->
+                        <!--<div class="pure-u-16-24 notification__item__description">-->
+                            <!--<h4><em class="green">Fred Zvotskiak</em> requested additional address information</h4>-->
+                            <!--<p class="timestamp">Friday March 11th, 2016 09:22AM</p>-->
+
+                        <!--</div>-->
+                        <!--<div class="pure-u-4-24 notification__item__cta">-->
+                            <!--<a href="#" class="pure-button button-fail button-xsmall">deny</a>-->
+                            <!--<a href="#" class="pure-button button-success button-xsmall">approve</a>-->
+
+
+                        <!--</div>-->
+                        <!--<div class="pure-u-1-24"></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="pure-u-1-1 notification__item">-->
+                    <!--<div class="pure-g">-->
+                        <!--<div class="pure-u-3-24 notification__item__icon">-->
+                            <!--<i class="fa fa-question fa-2x "></i>-->
+                        <!--</div>-->
+                        <!--<div class="pure-u-16-24 notification__item__description">-->
+                            <!--<h4><em class="green">Sam Clifton</em> requested additional employment information</h4>-->
+                            <!--<p class="timestamp">Friday March 10th, 2016 01:12PM</p>-->
+
+                        <!--</div>-->
+                        <!--<div class="pure-u-4-24 notification__item__cta">-->
+                            <!--<a href="#" class="pure-button button-fail button-xsmall">deny</a>-->
+                            <!--<a href="#" class="pure-button button-success button-xsmall">approve</a>-->
+
+
+                        <!--</div>-->
+                        <!--<div class="pure-u-1-24"></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
 </template>
