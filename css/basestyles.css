@@ -1,52 +1,79 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700italic,700,400italic,300,300italic,500italic,500);
+/*positioning*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.centered {
+    margin: 0px auto;
+}
+.mg-t-10{
+    margin-top: 10px;
+}
+.clear{
+    clear:both;
+}
+.floatR{
+    float:right;
+}
+.floatL{
+    float:right;
+}
+.t-centered{
+    text-align: center;
+}
+/*Font family*/
+
+/* HEADING TAGS */
 h1 {
     font-family: Roboto;
-    font-size: 26pt !important;
+    font-size: 32px;
     color: #616161;
-    /*border-bottom: 1px solid #cccccc;*/
+    border-bottom: 1px solid #cccccc;
     font-weight: 300;
-    line-height: 2em;
+    line-height: 2.74em;
     margin: 0;
     padding: 0;
 }
 
-h2 {
-    font-family: Roboto;
-    font-size: 20pt !important;
-    color: #616161;
-    line-height: 1em;
-    font-weight: 300;
-    padding: 0;
-    margin: 30px 0px 20px 0px !important;
-}
-
 h3 {
     font-family: Roboto;
-    font-weight: bold;
-    font-size: 20pt !important;
-    line-height: 1em;
+    font-size: 24px;
     color: #616161;
-    margin: 0 !important;
+    line-height: 3.15em;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+}
+
+h2{
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 2.7em;
+    color: #616161;
+    margin: 0;
 }
 
 h4 {
     font-family: Roboto;
-    font-size: 16pt !important;
+    font-size: 18px;
     color: #616161;
-    font-weight: 300;
-    line-height: 1em;
-    margin: 0 !important;
+    font-weight: 500;
+    line-height: 1.72em;
+    margin: 0;
     padding: 0;
 }
 
 h5 {
     font-family: Roboto;
-    font-size: 10pt !important;
-    color: #616161;
+    font-size: 12px;
+    color: #8c8c8c;
     font-weight: 300;
-    line-height: 1em;
+    line-height: 1.85em;
     font-style: italic;
-    margin: 0 !important;
+    margin: 0;
     padding: 0;
 }
 /* Default styles */
@@ -63,3 +90,7 @@ p {
     /*text-decoration: underline;*/
     /*color: #0072bc;*/
 /*}*/
+
+.m-l-20{
+    margin-left:20px;
+}

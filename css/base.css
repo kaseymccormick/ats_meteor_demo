@@ -1,20 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700italic,700,400italic,300,300italic,500italic,500);
+
 body{
     color:#616161;
 }
-/* Default styles */
-p {
-    font-family: Roboto;
-    font-size: 14pt;
-    color: #616161;
-    line-height: 1.5em;
-}
 
-/*a {*/
-    /*font-family: inherit;*/
-    /*font-size: inherit;*/
-    /*text-decoration: underline;*/
-    /*color: #0072bc;*/
-/*}*/
 a, a i{
     text-decoration: none;
 }
@@ -26,9 +15,7 @@ a, a i{
     padding: 0px;
     margin: 0px;
 }
-.t-centered{
-    text-align: center;
-}
+
 .red-text{
     color:#C02D15;
 }

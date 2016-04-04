@@ -1,20 +1,5 @@
 /* CSS declarations go here */
-html {
-    box-sizing: border-box;
-}
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-p{
-    font-size: 12px;
-}
 
-.centered {
-    margin: 0px auto;
-}
-.mg-t-10{
-    margin-top: 10px;
-}
 .button-xsmall{
     font-size: 70%;
 }
@@ -33,27 +18,11 @@ margin:auto;
 .page-content {
     margin-top: 50px;
 }
-h1{
-    font-size:30px;
-    font-weight:normal;
-    color:#616161;
-}
-h4{
-    font-size:20px;
-    font-weight:normal;
-}
+
 .green-bk{
     background-color:#339933;
 }
-.clear{
-    clear:both;
-}
-.floatR{
-    float:right;
-}
-.floatL{
-    float:right;
-}
+
 .custom-restricted-width{
     display: inline-block;
     width: 220px;
