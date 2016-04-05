@@ -11,6 +11,21 @@ html {
 .mg-t-10{
     margin-top: 10px;
 }
+.pad-top-20 {
+    padding-top: 20px;
+}
+.top-mar-50 {
+    margin-top: 50px;
+}
+.bot-mar-25 {
+    margin-bottom: 25px;
+}
+.m-l-20{
+    margin-left:20px;
+}
+.top-mar-15 {
+    margin-top: 15px;
+}
 .clear{
     clear:both;
 }
@@ -23,7 +38,9 @@ html {
 .t-centered{
     text-align: center;
 }
-/*Font family*/
+.visible{
+    display:block;
+}
 
 /* HEADING TAGS */
 h1 {
@@ -76,7 +93,7 @@ h5 {
     margin: 0;
     padding: 0;
 }
-/* Default styles */
+
 p {
     font-family: Roboto;
     font-size: 14pt;
@@ -84,13 +101,32 @@ p {
     line-height: 1.5em;
 }
 
-/*a {*/
-    /*font-family: inherit;*/
-    /*font-size: inherit;*/
-    /*text-decoration: underline;*/
-    /*color: #0072bc;*/
-/*}*/
 
-.m-l-20{
-    margin-left:20px;
+/*COLORS */
+.good{
+    color: rgba(11, 116, 11, 0.5);
+}
+.warning{
+    color: rgba(255, 128, 11, 0.6);
+}
+.attention{
+    color: rgba(204, 0, 0, 0.75);
+}
+.bg-green {
+    background-color: #339933  ;
+    color: #fff  ;
+    border: 0;
+    margin-right: 0px;
+}
+.c-orange{
+    color:#F36F0B;
+}
+.white a{
+    color: #cccccc;
+}
+.white{
+    color:white;
+}
+.white:hover{
+    color:grey;
 }

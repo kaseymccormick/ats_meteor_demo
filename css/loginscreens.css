@@ -1,6 +1,3 @@
-.light a{
-    color: #cccccc;
-}
 .login-box{
     border: 2px solid #cccccc;
     border-radius: 5px;
@@ -34,15 +31,7 @@
 .notification__item__icon i{
     margin-top: 30px;
 }
-.good{
-    color: rgba(11, 116, 11, 0.5);
-}
-.warning{
-    color: rgba(255, 128, 11, 0.6);
-}
-.attention{
-    color: rgba(204, 0, 0, 0.75);
-}
+
 .notification__item__cta {
     text-align: center;
     margin-top: 25px;
@@ -59,9 +48,7 @@
     background: #ccc;
     margin: 4px;
 }
-.visible{
-    display:block;
-}
+
 .pure-menu-item--sub a{
     text-decoration: none;
 }
@@ -75,9 +62,7 @@
     margin:0;
     line-height: 1.3em;
 }
-.c-orange{
-     color:#F36F0B;
- }
+
 .name-link{
     text-decoration:none;
     color:#339933
@@ -85,12 +70,7 @@
 .name-link:hover{
     text-decoration:underline;
 }
-.light{
-    color:white;
-}
-.light:hover{
-    color:grey;
-}
+
 #user-name{
     color: #616161;
     font-weight:normal;

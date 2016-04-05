@@ -226,7 +226,7 @@ input[type="radio"].toggle-no {
     display: none;
     width: 30px;
     height: 30px;
-    margin-right: 0px !important;
+    margin-right: 0px  ;
 }
 
 input[type="radio"].toggle-yes + label {
