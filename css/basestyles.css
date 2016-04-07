@@ -291,6 +291,13 @@ Buttons
 .btn-bg-white-inactive {
     background-color: #eaeaea;
 }
+.btn-bg-ea:hover{
+    background-color:#cccccc;
+}
+.btn-bg-ea-inactive{
+    background-color: #FFFFFF;
+    color:#eaeaea;
+}
 
 .disabled {
     opacity: 0.4;
