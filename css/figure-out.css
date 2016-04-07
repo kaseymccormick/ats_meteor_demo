@@ -35,7 +35,6 @@
 .notification em {color: #339933; font-weight: 700}
 .notification i {position: relative; top: 4px; color: #AAA; font-size: 80%}
 .notification .fa_icon {position: absolute; top: 50%; left: 30px; color: #9C9C9C; font-size: 30px; text-decoration: none; transform: translateY(-50%); -webkit-transform: translateY(-50%)}
-.notification .archive, .notification .restore {position: absolute; top: 50%; right: 30px; width: 26px; height: 26px; color: #444; font-size: 24px; font-family: 'FontAwesome'; line-height: 26px; text-align: center; vertical-align: middle; text-decoration: none; overflow: hidden; transform: translateY(-50%); -webkit-transform: translateY(-50%)}
 .notification.unread .fa_icon {color: #0072BC}
 .notification .action_button {position: absolute; top: 50%; right: 86px; transform: translateY(-50%); -webkit-transform: translateY(-50%)}
 

@@ -155,6 +155,9 @@ Colors
 .user{
     color:#339933;
 }
+.c-gray{
+    color:#616161;
+}
 
 
 /*------------------------------------------------
@@ -180,3 +183,91 @@ List Styles
 /*------------------------------------------------
 cursors
 ------------------------------------------------*/
+
+/*------------------------------------------------
+Buttons
+------------------------------------------------*/
+.btn-lrg {
+    font-size: 16px;
+    min-width: 100px;
+    height: 36px;
+    border-radius: 5px 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #ffffff;
+    border: none;
+    font-weight: normal;
+    margin: 10px 0px 10px 20px;
+}
+
+.btn-sml {
+    font-size: 14px;
+    min-width: 75px;
+    font-weight: normal;
+    height: 24px;
+    line-height: 14px;
+    border-radius: 5px 5px;
+    padding: 5px 15px;
+    color: #ffffff;
+    border: none;
+    margin: 10px;
+}
+
+.btn-bg-green {
+    background-color: #339933;
+    text-decoration: none;
+}
+
+.btn-bg-blue {
+    background-color: #0072bc;
+    text-decoration: none;
+}
+
+.btn-bg-red {
+    background-color: #9e0e0e;
+    text-decoration: none;
+}
+
+
+.btn-bg-white {
+    background-color: #ffffff;
+    border: 1px solid #616161;
+    color: #616161;
+    text-decoration: none;
+}
+
+.btn-bg-green:hover {
+    background-color: #0e6735;
+}
+
+.btn-bg-green-inactive {
+    background-color: #0e6735;
+}
+
+.btn-bg-blue:hover {
+    background-color: #005285;
+}
+
+.btn-bg-blue-inactive {
+    background-color: #005285;
+}
+
+.btn-bg-red:hover {
+    background-color: #711417;
+}
+
+.btn-bg-red-inactive {
+    background-color: #711417;
+}
+
+.btn-bg-white:hover {
+    background-color: #eaeaea;
+}
+
+.btn-bg-white-inactive {
+    background-color: #eaeaea;
+}
+
+.disabled {
+    opacity: 0.4;
+}
