@@ -246,6 +246,11 @@ Buttons
     background-color: #9e0e0e;
     text-decoration: none;
 }
+.btn-bg-ea{
+    background-color:#eaeaea;
+    text-decoration:none;
+    color:#616161;
+}
 
 
 .btn-bg-white {
