@@ -464,42 +464,6 @@ a {
     margin: 10px 0px;
 }
 
-.tbl-notifications {
-    width:100%;
-    border: 1px solid #eaeaea;
-    margin: 20px 0px;
-}
-
-.tbl-notifications td {
-    padding: 30px;
-}
-
-.tbl-notifications tr {
-    border-top: 1px solid #eaeaea;
-}
-
-.tbl-notifications .icon {
-    padding-right: 0;
-}
-
-.tbl-notifications .btn {
-    text-align: right;
-    float: right;
-}
-
-.tbl-notifications .new {
-    border: 1px solid #005285;
-    background-color: #cce3f2;
-}
-
-.tbl-notifications .user {
-    color: #339933;
-    text-decoration: none;
-}
-
-.tbl-notifications .item {
-    color: #0072bc;
-}
 
 
 /* Popup Styles */

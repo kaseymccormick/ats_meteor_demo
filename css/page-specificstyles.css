@@ -31,27 +31,20 @@ Dashboard
 }
 
 /*NOTIFICATION CENTER*/
+/*.tbl-notifications {*/
+    /*width:100%;*/
+    /*border: 1px solid #eaeaea;*/
+    /*margin: 20px 0px;*/
+/*}*/
+
 .notification__item{
     border:1px solid #cccccc;
-    border-radius:5px;
-    margin:8px;
+}
+.new-blue-bk-blue-out {
+    border: 1px solid #005285;
+    background-color: #cce3f2;
 }
 .notification__item__icon  {
     text-align: center;
     vertical-align: bottom;
-}
-.notification__item__icon i{
-    margin-top: 30px;
-}
-
-.notification__item__cta {
-    text-align: center;
-    margin-top: 25px;
-}
-.notification__item__dismiss i{
-    padding: 2px;
-    border: solid 1px #cccccc;
-    border-radius: 15px;
-    background: #ccc;
-    margin: 4px;
 }
