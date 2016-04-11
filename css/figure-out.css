@@ -1,11 +1,5 @@
 
-.pure-menu-item--sub a{
-    text-decoration: none;
-}
-.pure-menu-item-subnav li{
-    list-style-type: none;
-    padding:2px;
-}
+
 .fd-info-list {
     list-style-type: none;
     padding:0px;
@@ -51,3 +45,186 @@ a.alert__success, a.alert__error, a.alert__warning {text-decoration: none}
 input[type="text"] {margin-bottom: 4px}
 textarea {width: 400px; max-width: 100%; height: 80px; box-sizing: border-box}
 .archive_button, .home_button {margin-top: 26px; color: #FFF; background: rgb(28, 184, 65); text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); border-radius: 4px}
+
+/*HELLO CSS*/
+/* CSS declarations go here */
+
+.button-xsmall{
+    font-size: 70%;
+}
+.button-success{
+    background-color: #339933;
+    color:white;
+}
+.header__title, .header-plus{
+    /*border-bottom:1px solid #616161;*/
+    margin-bottom:10px;
+}
+
+.header__button{
+    margin:auto;
+}
+.page-content {
+    margin-top: 50px;
+}
+
+.green-bk{
+    background-color:#339933;
+}
+
+.custom-restricted-width{
+    display: inline-block;
+    width: 220px;
+    padding:0px 20px;
+}
+
+.list__no-style__float-left {
+    list-style-type: none;
+}
+.list__no-style__float-left li{
+    float:left;
+}
+.filter-search{
+    margin:5px 0px 20px 0px;
+}
+.filter-search__actions__search input{
+    width: 150px;
+    line-height: 1.5em;
+}
+/*----------------------------------------------
+address book
+----------------------------------------------*/
+.addressbook__row{
+    margin: 20px 0px;
+}
+.addressbook__entry{
+    padding:2px;
+}
+.addressbook__entry:hover {
+    border: 1px solid #c1c1c1;
+    border-radius: 5px;
+}
+.addressbook__entry__link{
+    text-decoration: none;
+    color:#000000;
+}
+.addressbook__entry a:hover {
+
+}
+.addressbook__entry ul{
+    list-style-type:none;
+    padding:0px;
+}
+.addressbook__entry__user-image {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.addressbook__entry__user-image--profile{
+    width: 90%;
+    margin: 5px auto;
+    display: inherit;
+}
+.addressbook__entry__user-image--shield{
+    width:20px;
+    margin: 5px;
+    display: inherit;
+}
+.addressbook__entry__information{
+    padding-left:15px;
+}
+.addressbook__entry__information h4{
+    margin-top:0px;
+    margin-bottom:0px;
+}
+.addressbook__entry__information ul{
+    margin:5px 0px;
+}
+.addressbook__entry__listmember{
+    float:left;
+    font-style: italic;
+    color:#0000ed;
+}
+/*----------------------------------------------
+address book individual profile
+----------------------------------------------*/
+.line-under{
+    border-bottom:1px solid #9C9B9B;
+    margin-bottom: 10px;
+}
+.picture-list__image{
+    margin-top:20px;
+    border:solid 1px #888888;
+    border-radius:5px;
+}
+
+.picture-list__image--profile {
+    width: 100%;
+    padding: 3px;
+    margin: 0 auto;
+}
+.picture-list__image--shield {
+    width: 12%;
+    margin: 5px;
+}
+.picture-list__lists li{
+    list-style-type: none;
+    color: #0000cc;
+    font-style: italic;
+}
+.picture-list__lists li:nth-child(3n){
+    color: #339933;
+}
+.fields__individual {
+    line-height: 1.5;
+}
+
+.fields__individual em:hover{
+    text-decoration: underline;
+}
+
+.fields__individual h3{
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 0px;
+    color: #616161;
+
+}
+
+.fields__individual h4{
+    font-size: 20px;
+    font-weight: normal;
+    margin: 10px 0px 0px;
+}
+
+.fields__individual.green, em.green{
+    color:#138613;
+}
+
+.fields__individual .red, .red {
+    color:#F36F0B;
+}
+
+.fields__individual a{
+    font-style: italic;
+    color: #0000cc;
+}
+.employee-list__item__picture{
+    border: 1px solid #cccccc;
+}
+.employee-list__item__information{
+    padding-left:20px;
+}
+.employee-list__item__information h4{
+    margin-top:0px;
+    padding-top:0px;
+}
+.employee-list__item__information ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    line-height: 1em;
+}
+.white{
+    color:white  ;
+}
