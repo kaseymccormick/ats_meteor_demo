@@ -749,3 +749,25 @@ i.fa.fa-upload.fa-2x {
 .c-61{
     color: #616161;
 }
+
+.inv-select {
+  height: 36px;
+  margin-top: 2px;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.inv-input {
+  height: 36px;
+  margin-top: 2px;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.pad-r-10 {
+  padding-right: 10px;
+}
+
+.pad-l-10 {
+  padding-left: 10px;
+}
