@@ -319,64 +319,7 @@ a {
     background-color: #b13e3e;
 }
 
-.alert-new {
-    max-width: 100%;
-    padding: 30px;
-    font-family: Roboto;
-    font-size: 14px;
-    color: #005285;
-    height: auto;
-    border: 1px solid #005285;
-    background-color: #cce3f2;
-    border-radius: 5px;
-    margin: 10px 0px;
-    font-weight: bold;
-}
 
-.alert-error {
-    max-width: 100%;
-    padding: 30px;
-    font-family: Roboto;
-    font-size: 14px;
-    color: #711417;
-    height: auto;
-    height: auto;
-    border: 1px solid #711417;
-    background-color: #eccfcf;
-    border-radius: 5px;
-    margin: 10px 0px;
-    font-weight: bold;
-}
-
-.alert-success {
-    max-width: 100%;
-    padding: 30px;
-    font-family: Roboto;
-    font-size: 14px;
-    color: #0e6735;
-    height: auto;
-    height: auto;
-    border: 1px solid #0e6735;
-    background-color: #d6ebd6;
-    border-radius: 5px;
-    margin: 10px 0px;
-    font-weight: bold;
-}
-
-.alert-unverified {
-    max-width: 100%;
-    padding: 30px;
-    font-family: Roboto;
-    font-size: 14px;
-    color: #cc7a00;
-    height: auto;
-    height: auto;
-    border: 1px solid #cc7a00;
-    background-color: #ffebcc;
-    border-radius: 5px;
-    margin: 10px 0px;
-    font-weight: bold;
-}
 
 /* Table Styles */
 .tbl-main {

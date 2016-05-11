@@ -241,6 +241,14 @@ Buttons
     background-color: #0072bc;
     text-decoration: none;
 }
+.btn-blue{
+    border:1px solid #0072bc;
+    font-weight: bold;
+    color:#0072bc;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
 
 .btn-bg-red {
     background-color: #9e0e0e;
@@ -302,3 +310,4 @@ Buttons
 .disabled {
     opacity: 0.4;
 }
+

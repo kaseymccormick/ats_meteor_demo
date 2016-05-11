@@ -1,4 +1,4 @@
-<template name="pay_file-disbursement">
+<template name="pay_file-disbursement_v2">
     <div class="pure-g">
         <div class="pure-u-1-1 header__title">
             <div class="pure-g">
@@ -35,8 +35,9 @@
                         <dd>6420 Hummingbird Lane</dd>
                         <dd>Las Vegas, NV 89103</dd>
                     </dl>
-                    <a class="btn-blue btn-sml" target="_blank" href="CDF-NPD160.PDF">View Closing Disclosure</a>
-
+                    <a class="pure-button pure-button-primary button-xsmall" target="_blank" href="CDF-NPD160.PDF">View Closing Disclosure</a>
+                    <p></p>
+                    <a class="pure-button pure-button-primary button-xsmall"  href="">Settlement Coordinator Review</a>
 
 
                 </div>
@@ -70,7 +71,7 @@
                     <ul class="fd-docs"> <b>Other Documents</b>
                         <li><a target="_blank" href="/ALTASettlement.pdf" ><i><u>ALTA Settlement Statement <i class="fa fa-external-link"></i></u></i></a></li>
                     </ul>
-                    <a class="btn-blue btn-sml m-t-10" href="/upload-doc">Upload other associated documents</a>
+                    <a class="pure-button pure-button-primary button-xsmall m-t-10" href="/upload-doc">Upload other associated documents</a>
                 </div>
 
             </div>
@@ -101,19 +102,6 @@
                     <h2>160,000</h2>
                     <h5>Scheduled:400,000</h5>
                 </div>
-            </div>
-        </div>
-        <div class="pure-u-1-1 other-actions mar-t-20">
-            <div class="pure-g">
-            <div class="pure-u-1-3">
-            <a class="btn-blue btn-sml floatR"  href="/SettlementCoordinatorReview">Ready for Settlement Coordinator Review</a>
-            </div>
-            <div class="pure-u-1-3">
-                <p>something</p>
-            </div>
-            <div class="pure-u-1-3">
-                <a class="m-t-35 floatR btn-bg-green btn-sml">Add new Comment</a>
-            </div>
             </div>
         </div>
         <div class="pure-u-1-1 disb-list">
@@ -156,7 +144,7 @@
                         <a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>
                     </td>
                     <td>
-                    <input type="checkbox">
+                        <input type="checkbox">
                     </td>
                 </tr>
 
@@ -172,26 +160,26 @@
                     <td>
                         Residential Appraisal Services
                         <a href="#" class="tooltip">
-                        <span>TNT Termite 2134 S Ames St. Stuart, IA 44611 </span>
-                        <i class="fa fa-question-circle c-61"></i>
+                            <span>TNT Termite 2134 S Ames St. Stuart, IA 44611 </span>
+                            <i class="fa fa-question-circle c-61"></i>
                         </a>
                     </td>
                     <td>
                         <h3>$450.00</h3>
                     </td>
                     <td>
-                        <tr>
-                            <td class="c-green"> Paper Check
-                            </td>
-                        </tr>
-                        <tr>
-                            <td> <b>From Account:</b> **3342
-                            </td>
-                        </tr>
+                <tr>
+                    <td class="c-green"> Paper Check
                     </td>
-                    <td>
-                     <a href="" class="pure-button button-xsmall button-gray"> Edit</a>
+                </tr>
+                <tr>
+                    <td> <b>From Account:</b> **3342
                     </td>
+                </tr>
+                </td>
+                <td>
+                    <a href="" class="pure-button button-xsmall button-gray"> Edit</a>
+                </td>
 
                 </tr>
 
@@ -207,9 +195,9 @@
 
                     <td class="c-green">American Flood Research
                         <a href="#" class="tooltip">
-                        <span>TNT Termite 2134 S Ames St. Stuart, IA 44611 </span>
-                        <i class="fa fa-question-circle c-61"></i>
-                    </a>
+                            <span>TNT Termite 2134 S Ames St. Stuart, IA 44611 </span>
+                            <i class="fa fa-question-circle c-61"></i>
+                        </a>
                     </td>
                     <td><h3>$11.00</h3></td>
 
@@ -228,193 +216,193 @@
 
                 <!--Row four-->
                 <!--<tr class="pure-table-odd" >-->
-                    <!--<td>Title - Escrow Closing Fee-->
-                    <!--</td>-->
-                    <!--<td>-->
-                        <!--<a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>-->
-                    <!--</td>-->
-                    <!--<td>-->
+                <!--<td>Title - Escrow Closing Fee-->
+                <!--</td>-->
+                <!--<td>-->
+                <!--<a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>-->
+                <!--</td>-->
+                <!--<td>-->
 
-                    <!--<td>TitleCore National LLC-->
-                        <!--<a href="#" class="tooltip">-->
-                            <!--<span>  </span>-->
-                            <!--<i class="fa fa-question-circle c-61"></i>-->
-                        <!--</a>-->
-                    <!--</td>-->
+                <!--<td>TitleCore National LLC-->
+                <!--<a href="#" class="tooltip">-->
+                <!--<span>  </span>-->
+                <!--<i class="fa fa-question-circle c-61"></i>-->
+                <!--</a>-->
+                <!--</td>-->
 
                 <!--<td><h3 >$500.00</h3></td>-->
 
                 <!--<td>-->
-                    <!--<input type="radio" name="group1" > Check-->
-                    <!--<input type="radio" name="group1" checked="true"> Wire-->
-                    <!--<br/>-->
-                    <!--<a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>-->
+                <!--<input type="radio" name="group1" > Check-->
+                <!--<input type="radio" name="group1" checked="true"> Wire-->
+                <!--<br/>-->
+                <!--<a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>-->
 
                 <!--</td>-->
                 <!--<td>-->
-                    <!--<input type="checkbox">-->
+                <!--<input type="checkbox">-->
                 <!--</td>-->
                 <!--</tr>-->
                 <!--end row four-->
 
                 <!--row five-->
                 <!--<tr>-->
-                    <!--<td> Home Warranty-->
-                    <!--</td>-->
-                    <!--<td>-->
-                        <!--<a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>-->
-                    <!--</td>-->
-                    <!--<td>-->
+                <!--<td> Home Warranty-->
+                <!--</td>-->
+                <!--<td>-->
+                <!--<a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>-->
+                <!--</td>-->
+                <!--<td>-->
 
-                    <!--<td>Home Buyers Resale Warranty Corp.-->
-                    <!--<a href="#" class="tooltip">-->
-                        <!--<span>  </span>-->
-                        <!--<i class="fa fa-question-circle c-61"></i>-->
-                    <!--</a>-->
-                    <!--</td>-->
+                <!--<td>Home Buyers Resale Warranty Corp.-->
+                <!--<a href="#" class="tooltip">-->
+                <!--<span>  </span>-->
+                <!--<i class="fa fa-question-circle c-61"></i>-->
+                <!--</a>-->
+                <!--</td>-->
 
                 <!--<td><h3 >$460.10</h3></td>-->
 
                 <!--<td>-->
-                    <!--<input type="radio" name="group1" checked="true"> Check-->
-                    <!--<input type="radio" name="group1" > Wire-->
-                    <!--<br/>-->
-                    <!--<a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>-->
+                <!--<input type="radio" name="group1" checked="true"> Check-->
+                <!--<input type="radio" name="group1" > Wire-->
+                <!--<br/>-->
+                <!--<a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>-->
 
                 <!--</td>-->
                 <!--<td>-->
-                    <!--<input type="checkbox">-->
+                <!--<input type="checkbox">-->
                 <!--</td>-->
                 <!--</tr>-->
                 <!--end row Five-->
 
                 <!--row six-->
                 <!--<tr class="pure-table-odd" >-->
-                    <!--<td> Title - E - Recording Fee-->
-                    <!--</td>-->
-                    <!--<td>-->
-                        <!--<a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>-->
-                    <!--</td>-->
-                    <!--<td>-->
+                <!--<td> Title - E - Recording Fee-->
+                <!--</td>-->
+                <!--<td>-->
+                <!--<a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>-->
+                <!--</td>-->
+                <!--<td>-->
 
-                    <!--<td>Simplefile / TCN Recordings Department-->
-                        <!--<a href="#" class="tooltip">-->
-                            <!--<span>  </span>-->
-                            <!--<i class="fa fa-question-circle c-61"></i>-->
-                        <!--</a>-->
-                    <!--</td>-->
+                <!--<td>Simplefile / TCN Recordings Department-->
+                <!--<a href="#" class="tooltip">-->
+                <!--<span>  </span>-->
+                <!--<i class="fa fa-question-circle c-61"></i>-->
+                <!--</a>-->
+                <!--</td>-->
 
 
                 <!--<td><h3 >$10.00</h3></td>-->
 
                 <!--<td>-->
-                    <!--<input type="radio" name="group1" checked="true"> Check-->
-                    <!--<input type="radio" name="group1" > Wire-->
-                    <!--<br/>-->
-                    <!--<a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>-->
+                <!--<input type="radio" name="group1" checked="true"> Check-->
+                <!--<input type="radio" name="group1" > Wire-->
+                <!--<br/>-->
+                <!--<a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>-->
 
                 <!--</td>-->
                 <!--<td>-->
-                    <!--<input type="checkbox">-->
+                <!--<input type="checkbox">-->
                 <!--</td>-->
                 <!--</tr>-->
                 <!--END row six-->
 
                 <!--row 7-->
                 <!--<tr>-->
-                    <!--<td>Plot Plan-->
-                    <!--</td>-->
-                    <!--<td>-->
-                        <!--<a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>-->
-                    <!--</td>-->
-                    <!--<td>-->
+                <!--<td>Plot Plan-->
+                <!--</td>-->
+                <!--<td>-->
+                <!--<a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>-->
+                <!--</td>-->
+                <!--<td>-->
 
-                    <!--<td>Boundary Line Surveys-->
-                        <!--<a href="#" class="tooltip">-->
-                            <!--<span>  </span>-->
-                            <!--<i class="fa fa-question-circle c-61"></i>-->
-                        <!--</a>-->
-                    <!--</td>-->
+                <!--<td>Boundary Line Surveys-->
+                <!--<a href="#" class="tooltip">-->
+                <!--<span>  </span>-->
+                <!--<i class="fa fa-question-circle c-61"></i>-->
+                <!--</a>-->
+                <!--</td>-->
 
 
                 <!--<td><h3 >$80.00</h3></td>-->
 
                 <!--<td>-->
-                    <!--<input type="radio" name="group1" checked="true"> Check-->
-                    <!--<input type="radio" name="group1" > Wire-->
-                    <!--<br/>-->
-                    <!--<br>-->
-                    <!--<label for="acct">From Account</label>-->
-                    <!--<select name="acct" id="">-->
-                        <!--<option value="1">**3345</option>-->
-                        <!--<option value="2">**6672</option>-->
-                    <!--</select>-->
+                <!--<input type="radio" name="group1" checked="true"> Check-->
+                <!--<input type="radio" name="group1" > Wire-->
+                <!--<br/>-->
+                <!--<br>-->
+                <!--<label for="acct">From Account</label>-->
+                <!--<select name="acct" id="">-->
+                <!--<option value="1">**3345</option>-->
+                <!--<option value="2">**6672</option>-->
+                <!--</select>-->
                 <!--</td>-->
                 <!--<td>-->
-                    <!--<input type="checkbox">-->
+                <!--<input type="checkbox">-->
                 <!--</td>-->
 
                 <!--</tr>-->
 
                 <!--start row 8-->
                 <!--<tr class="pure-table-odd" >-->
-                    <!--<td> Homeowners Insurance Premium-->
-                    <!--</td>-->
-                    <!--<td>-->
-                        <!--<a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>-->
-                    <!--</td>-->
-                    <!--<td>-->
+                <!--<td> Homeowners Insurance Premium-->
+                <!--</td>-->
+                <!--<td>-->
+                <!--<a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>-->
+                <!--</td>-->
+                <!--<td>-->
 
-                    <!--<td>Allstate-->
-                        <!--<a href="#" class="tooltip">-->
-                            <!--<span>  </span>-->
-                            <!--<i class="fa fa-question-circle c-61"></i>-->
-                        <!--</a>-->
-                    <!--</td>-->
+                <!--<td>Allstate-->
+                <!--<a href="#" class="tooltip">-->
+                <!--<span>  </span>-->
+                <!--<i class="fa fa-question-circle c-61"></i>-->
+                <!--</a>-->
+                <!--</td>-->
 
 
                 <!--<td><h3 >$907.00</h3></td>-->
 
                 <!--<td>-->
-                    <!--<input type="radio" name="group1" > Check-->
-                    <!--<input type="radio" name="group1" > Wire-->
-                    <!--<br/>-->
-                    <!--<a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>-->
+                <!--<input type="radio" name="group1" > Check-->
+                <!--<input type="radio" name="group1" > Wire-->
+                <!--<br/>-->
+                <!--<a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>-->
 
                 <!--</td>-->
                 <!--<td>-->
-                    <!--<input type="checkbox">-->
+                <!--<input type="checkbox">-->
                 <!--</td>-->
 
                 <!--</tr>-->
 
                 <!--start row 9-->
                 <!--<tr>-->
-                    <!--<td>Recording Fees-->
-                    <!--</td>-->
-                    <!--<td>-->
-                        <!--<a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>-->
-                    <!--</td>-->
-                    <!--<td>-->
+                <!--<td>Recording Fees-->
+                <!--</td>-->
+                <!--<td>-->
+                <!--<a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>-->
+                <!--</td>-->
+                <!--<td>-->
 
-                    <!--<td>Simplefile / TCN Recordings Department-->
-                        <!--<a href="#" class="tooltip">-->
-                            <!--<span>  </span>-->
-                            <!--<i class="fa fa-question-circle c-61"></i>-->
-                        <!--</a>-->
-                    <!--</td>-->
+                <!--<td>Simplefile / TCN Recordings Department-->
+                <!--<a href="#" class="tooltip">-->
+                <!--<span>  </span>-->
+                <!--<i class="fa fa-question-circle c-61"></i>-->
+                <!--</a>-->
+                <!--</td>-->
 
                 <!--<td><h3 >$107.00</h3></td>-->
 
                 <!--<td>-->
-                    <!--<input type="radio" name="group1" > Check-->
-                    <!--<input type="radio" name="group1" > Wire-->
-                    <!--<br/>-->
-                    <!--<a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>-->
+                <!--<input type="radio" name="group1" > Check-->
+                <!--<input type="radio" name="group1" > Wire-->
+                <!--<br/>-->
+                <!--<a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>-->
 
                 <!--</td>-->
                 <!--<td>-->
-                    <!--<input type="checkbox">-->
+                <!--<input type="checkbox">-->
                 <!--</td>-->
 
                 <!--</tr>-->
@@ -422,31 +410,31 @@
                 <!--start row 10-->
 
                 <!--<tr class="pure-table-odd" >-->
-                    <!--<td>Transfer Tax-->
-                    <!--</td>-->
-                    <!--<td>-->
-                        <!--<a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>-->
-                    <!--</td>-->
-                    <!--<td>-->
+                <!--<td>Transfer Tax-->
+                <!--</td>-->
+                <!--<td>-->
+                <!--<a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>-->
+                <!--</td>-->
+                <!--<td>-->
 
-                    <!--<td>Simplefile / TCN Recordings Department-->
-                        <!--<a href="#" class="tooltip">-->
-                            <!--<span>  </span>-->
-                            <!--<i class="fa fa-question-circle c-61"></i>-->
-                        <!--</a>-->
-                    <!--</td>-->
+                <!--<td>Simplefile / TCN Recordings Department-->
+                <!--<a href="#" class="tooltip">-->
+                <!--<span>  </span>-->
+                <!--<i class="fa fa-question-circle c-61"></i>-->
+                <!--</a>-->
+                <!--</td>-->
 
                 <!--<td><h3 >$1125.00</h3></td>-->
 
                 <!--<td>-->
-                    <!--<input type="radio" name="group1" > Check-->
-                    <!--<input type="radio" name="group1" > Wire-->
-                    <!--<br/>-->
-                    <!--<a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>-->
+                <!--<input type="radio" name="group1" > Check-->
+                <!--<input type="radio" name="group1" > Wire-->
+                <!--<br/>-->
+                <!--<a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>-->
 
                 <!--</td>-->
                 <!--<td>-->
-                    <!--<input type="checkbox">-->
+                <!--<input type="checkbox">-->
                 <!--</td>-->
                 <!--</tr>-->
 
@@ -471,16 +459,16 @@
                     <td><h3>$226.74</h3></td>
 
                     <td>
-                        <tr>
-                            <td class="c-green">Paper Check</td>
-                        </tr>
-                        <tr>
-                            <td> <b>From Account:</b> **3342</td>
-                        </tr>
-                    </td>
-                    <td>
-                        <a href="" class="pure-button button-xsmall button-gray"> Edit</a>
-                    </td>
+                <tr>
+                    <td class="c-green">Paper Check</td>
+                </tr>
+                <tr>
+                    <td> <b>From Account:</b> **3342</td>
+                </tr>
+                </td>
+                <td>
+                    <a href="" class="pure-button button-xsmall button-gray"> Edit</a>
+                </td>
 
                 </tr>
 
@@ -567,50 +555,50 @@
                         </a>
                     </td>
 
-                <td><h3 >$337.50</h3></td>
+                    <td><h3 >$337.50</h3></td>
 
-                <td>
-                    <input type="radio" name="group5" checked="true" > Check
-                    <input type="radio" name="group5" > Wire
-                    <br/>
-                    <a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>
+                    <td>
+                        <input type="radio" name="group5" checked="true" > Check
+                        <input type="radio" name="group5" > Wire
+                        <br/>
+                        <a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>
 
-                </td>
-                <td>
-                    <input type="checkbox">
-                </td>
+                    </td>
+                    <td>
+                        <input type="checkbox">
+                    </td>
                 </tr>
                 <!--end row 14-->
 
                 <!--start row 15-->
                 <!--<tr>-->
-                    <!--<td> Title - Settlement Closing Fee-->
-                    <!--</td>-->
-                    <!--<td>-->
-                        <!--<a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>-->
-                    <!--</td>-->
-                    <!--<td>-->
+                <!--<td> Title - Settlement Closing Fee-->
+                <!--</td>-->
+                <!--<td>-->
+                <!--<a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>-->
+                <!--</td>-->
+                <!--<td>-->
 
-                    <!--<td>TitleCore National LLC-->
-                        <!--<a href="#" class="tooltip">-->
-                            <!--<span>  </span>-->
-                            <!--<i class="fa fa-question-circle c-61"></i>-->
-                        <!--</a>-->
-                    <!--</td>-->
+                <!--<td>TitleCore National LLC-->
+                <!--<a href="#" class="tooltip">-->
+                <!--<span>  </span>-->
+                <!--<i class="fa fa-question-circle c-61"></i>-->
+                <!--</a>-->
+                <!--</td>-->
 
                 <!--<td><h3 >$250.00</h3></td>-->
 
                 <!--<td>-->
-                    <!--<input type="radio" name="group1" > Check-->
-                    <!--<input type="radio" name="group1" > Wire-->
-                    <!--<br/>-->
-                    <!--<a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>-->
+                <!--<input type="radio" name="group1" > Check-->
+                <!--<input type="radio" name="group1" > Wire-->
+                <!--<br/>-->
+                <!--<a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>-->
 
                 <!--</td>-->
                 <!--<td>-->
-                    <!--<input type="checkbox">-->
+                <!--<input type="checkbox">-->
                 <!--</td>-->
-                    <!--</td>-->
+                <!--</td>-->
                 <!--</tr>-->
                 <!--end row 15-->
 
@@ -634,50 +622,50 @@
                         </a>
                     </td>
 
-                </td>
-                <td><h3 >$555.00</h3></td>
+                    </td>
+                    <td><h3 >$555.00</h3></td>
 
-                <td>
-                    <input type="radio" name="group4" checked="true"> Check
-                    <input type="radio" name="group4" > Wire
-                    <br/>
-                    <a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>
+                    <td>
+                        <input type="radio" name="group4" checked="true"> Check
+                        <input type="radio" name="group4" > Wire
+                        <br/>
+                        <a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>
 
-                </td>
-                <td>
-                    <input type="checkbox">
-                </td>
+                    </td>
+                    <td>
+                        <input type="checkbox">
+                    </td>
                 </tr>
                 <!--end row 17-->
 
                 <!--start row 18-->
                 <!--<tr class="pure-table-odd" >-->
-                    <!--<td> Title - Endorsement - COMP 100-->
-                    <!--</td>-->
-                    <!--<td>-->
-                        <!--<a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>-->
-                    <!--</td>-->
-                    <!--<td>-->
+                <!--<td> Title - Endorsement - COMP 100-->
+                <!--</td>-->
+                <!--<td>-->
+                <!--<a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>-->
+                <!--</td>-->
+                <!--<td>-->
 
-                    <!--<td>TitleCore National LLC-->
-                        <!--<a href="#" class="tooltip">-->
-                            <!--<span>  </span>-->
-                            <!--<i class="fa fa-question-circle c-61"></i>-->
-                        <!--</a>-->
-                    <!--</td>-->
+                <!--<td>TitleCore National LLC-->
+                <!--<a href="#" class="tooltip">-->
+                <!--<span>  </span>-->
+                <!--<i class="fa fa-question-circle c-61"></i>-->
+                <!--</a>-->
+                <!--</td>-->
 
 
                 <!--<td><h3 >$25.00</h3></td>-->
 
                 <!--<td>-->
-                    <!--<input type="radio" name="group1" > Check-->
-                    <!--<input type="radio" name="group1" > Wire-->
-                    <!--<br/>-->
-                    <!--<a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>-->
+                <!--<input type="radio" name="group1" > Check-->
+                <!--<input type="radio" name="group1" > Wire-->
+                <!--<br/>-->
+                <!--<a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>-->
 
                 <!--</td>-->
                 <!--<td>-->
-                    <!--<input type="checkbox">-->
+                <!--<input type="checkbox">-->
                 <!--</td>-->
 
                 <!--</td>-->
@@ -686,33 +674,33 @@
 
                 <!--start row 19-->
                 <!--<tr>-->
-                    <!--<td> Title - END Location w/o Survey-->
-                    <!--</td>-->
-                    <!--<td>-->
-                        <!--<a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>-->
-                    <!--</td>-->
-                    <!--<td>-->
+                <!--<td> Title - END Location w/o Survey-->
+                <!--</td>-->
+                <!--<td>-->
+                <!--<a href="/upload-doc"><i class="fa fa-upload fa-2x"></i></a>-->
+                <!--</td>-->
+                <!--<td>-->
 
-                    <!--<td>TitleCore National LLC-->
-                        <!--<a href="#" class="tooltip">-->
-                            <!--<span>  </span>-->
-                            <!--<i class="fa fa-question-circle c-61"></i>-->
-                        <!--</a>-->
-                    <!--</td>-->
+                <!--<td>TitleCore National LLC-->
+                <!--<a href="#" class="tooltip">-->
+                <!--<span>  </span>-->
+                <!--<i class="fa fa-question-circle c-61"></i>-->
+                <!--</a>-->
+                <!--</td>-->
 
                 <!--<td><h3 >$25.00</h3></td>-->
 
                 <!--<td>-->
-                    <!--<input type="radio" name="group1" checked="true"> Check-->
-                    <!--<input type="radio" name="group1" > Wire-->
-                    <!--<br/>-->
-                    <!--<a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>-->
+                <!--<input type="radio" name="group1" checked="true"> Check-->
+                <!--<input type="radio" name="group1" > Wire-->
+                <!--<br/>-->
+                <!--<a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>-->
 
                 <!--</td>-->
                 <!--<td>-->
-                    <!--<input type="checkbox">-->
+                <!--<input type="checkbox">-->
                 <!--</td>-->
-                    <!--</td>-->
+                <!--</td>-->
                 <!--</tr>-->
                 <!--end row 19-->
 
@@ -740,9 +728,9 @@
                         <br/>
                         <a href="/popup__arrange-payment" class="pure-button button-xsmall button-success m-t-10"> Arrange Payment</a>
                     </td>
-                <td>
-                    <input type="checkbox">
-                </td>
+                    <td>
+                        <input type="checkbox">
+                    </td>
                 </tr>
                 <!--end row 20-->
                 </tbody>
@@ -755,7 +743,9 @@
                     <h1>History</h1>
                 </div>
                 <div class="pure-u-1-24"></div>
-
+                <div class="pure-u-2-24">
+                    <a class="m-t-35 floatR pure-button button-success button-xsmall">Add new Comment</a>
+                </div>
             </div>
         </div>
         <div class="pure-u-1-1 disb-history__cta">
