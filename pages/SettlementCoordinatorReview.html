@@ -1,7 +1,24 @@
 <template name="settlement-coordinator-review">
     <div class="pure-g">
-        <div class="pure-u-1-1">
-            <h1><span>Settlement Coordinator Review</span></h1>
+        <div class="pure-u-1-1 mar-t-20">
+            <h1><span>Document Review</span></h1>
+        </div>
+        <div class="pure-u-3-5 mar-t-20">
+                <object class="border-gray" data="CDF-NPD160.PDF" type="application/pdf" width="550" height="500">
+                    alt : <a href="CDF-NPD160.PDF">CDF-NPD160.PDF</a>
+                </object>
+        </div>
+        <div class="pure-u-2-5 mar-t-20">
+            <dl>
+            <dt>I approve this meets the requirements outlined in </dt>
+                <br>
+            <dt><input type="checkbox"> Loan Details Line 5 </dt>
+                <dd>Escrow funds/impound accounts are required to be established for all loans purchased by Investor. Escrows may be established for funds collected by the lender, originator or servicer as required to be paid under the security instrument. Escrow funds include, but are not limited to, taxes, insurance (hazard, flood, and mortgage) premiums, special assessments, ground rents, water, sewer, etc.</dd>
+                <br>
+            <dt><input type="checkbox"> Loan Details Line 6 <br></dt>
+                <dd>The estimated Cash to Close this transaction is $98,099.99</dd>
+            </dl>
+            <a href="/pay_file-disbursement_approved" class="btn-sml btn-bg-green floatR">Approve</a>
         </div>
     </div>
 
