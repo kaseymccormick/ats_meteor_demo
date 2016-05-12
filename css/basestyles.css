@@ -34,6 +34,9 @@ Margin and padding Classes
 .mar-t-60{
     margin-top:60px;
 }
+.mar-t-neg25{
+    margin-top:-25px;
+}
 .mar-b-25{
     margin-bottom:25px;
 }
@@ -234,6 +237,16 @@ Buttons
     border: none;
     margin: 10px;
 }
+.btn-table {
+    font-size: 12px;
+    min-width: 75px;
+    font-weight: normal;
+    line-height: 19px;
+    border-radius: 5px 5px;
+    padding: 0px 10px;
+    color: #ffffff;
+    border: none;
+}
 
 .btn-bg-green {
     background-color: #339933;
@@ -252,6 +265,10 @@ Buttons
     -moz-border-radius:5px;
     border-radius:5px;
     background: white;
+}
+.btn-blue:hover{
+    color:white;
+    background: #0072bc;
 }
 
 .btn-bg-red {
