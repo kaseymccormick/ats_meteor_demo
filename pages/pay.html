@@ -1,13 +1,196 @@
 <template name="pay_dashboard">
 
   <div class="pure-g ">
-      <div class="pure-u-24-24 header__title">
+    <div class="pure-u-24-24 header__title">
       <h1>Sent Invoices</h1>
     </div>
+  </div>
 
-      <div class="pure-u-24-24 header__title">
+  <div class="pure-g">
+    <div class="pure-u-1-1">
+      <div class="pure-g">
+        <div class="pure-u-2-3"></div>
+
+        <div class="pure-u-1-6">
+          <a href="new_invoice"><button class="pure-button reply-button floatR">Send Invoice</button></a>
+        </div>
+
+        <div class="pure-u-1-6">
+          <input type="text" placeholder="search" class="floatR"/>
+        </div>
+      </div>
+    </div>
+    <div class="pure-u-1-1">
+      <table class="tbl-main">
+        <tr>
+          <th>ATS ID</th>
+          <th>Invoice Title</th>
+          <th>Payer</th>
+          <th>Payee</th>
+          <th>Amount</th>
+          <th>Status</th>
+          <th>Last Modified</th>
+          <th></th>
+        </tr>
+
+        <tr>
+          <td>000213</td>
+          <td>Pest Inspection</td>
+          <td>USA Bank</td>
+          <td>TNT Termite</td>
+          <td>$250.00</td>
+          <td>Pending</td>
+          <td>10/30/2015</td>
+          <td class="btn-col"><button class="btn-sml btn-bg-blue">View</button></td>
+        </tr>
+
+        <tr class="odd">
+          <td>000214</td>
+          <td>Appraisal</td>
+          <td>Quad Title</td>
+          <td>TNT Termite</td>
+          <td>$619.00</td>
+          <td>Denied</td>
+          <td>11/12/2015</td>
+          <td class="btn-col"><button class="btn-sml btn-bg-blue">View</button></td>
+        </tr>
+
+        <tr>
+          <td>000223</td>
+          <td>Home Inspection</td>
+          <td>WNBC Inc.</td>
+          <td>TNT Termite</td>
+          <td>$77.90</td>
+          <td>Approved</td>
+          <td>11/19/2015</td>
+          <td class="btn-col"><button class="btn-sml btn-bg-blue">View</button></td>
+        </tr>
+
+        <tr class="odd">
+          <td>000224</td>
+          <td>Title Stuff</td>
+          <td>ABC Title</td>
+          <td>TNT Termite</td>
+          <td>$55.11</td>
+          <td>Pending</td>
+          <td>11/23/2015</td>
+          <td class="btn-col"><button class="btn-sml btn-bg-blue">View</button></td>
+        </tr>
+
+        <tr>
+          <td>000414</td>
+          <td>Birthday Party</td>
+          <td>Sally Baggins</td>
+          <td>TNT Termite</td>
+          <td>$188.88</td>
+          <td>Paid</td>
+          <td>12/12/2015</td>
+          <td class="btn-col"><button class="btn-sml btn-bg-blue">View</button></td>
+        </tr>
+
+      </table>
+    </div>
+    <div class="pure-u-1-1">
+      <div class="pagination">
+        <div class="nav"><i class="fa fa-chevron-left"></i>&nbsp;&nbsp;&nbsp;Page </div> <div class="pg-num">1</div> <div class="nav"> of 5&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pure-g ">
+    <div class="pure-u-24-24 header__title">
       <h1>Received Invoices</h1>
     </div>
+  </div>
+
+  <div class="pure-g">
+    <div class="pure-u-1-1">
+      <div class="pure-g">
+        <div class="pure-u-2-3"></div>
+
+        <div class="pure-u-1-6"></div>
+
+        <div class="pure-u-1-6">
+          <input type="text" placeholder="search" class="floatR"/>
+        </div>
+      </div>
+    </div>
+    <div class="pure-u-1-1">
+      <table class="tbl-main">
+        <tr>
+          <th>ATS ID</th>
+          <th>Invoice Title</th>
+          <th>Payer</th>
+          <th>Payee</th>
+          <th>Amount</th>
+          <th>Status</th>
+          <th>Last Modified</th>
+          <th></th>
+        </tr>
+
+        <tr>
+          <td>000213</td>
+          <td>Pest Inspection</td>
+          <td>TNT Termite</td>
+          <td>USA Bank</td>
+          <td>$250.00</td>
+          <td>Pending</td>
+          <td>10/30/2015</td>
+          <td class="btn-col"><button class="btn-sml btn-bg-blue">View</button></td>
+        </tr>
+
+        <tr class="odd">
+          <td>000214</td>
+          <td>Appraisal</td>
+          <td>TNT Termite</td>
+          <td>Quad Title</td>
+          <td>$619.00</td>
+          <td>Denied</td>
+          <td>11/12/2015</td>
+          <td class="btn-col"><button class="btn-sml btn-bg-blue">View</button></td>
+        </tr>
+
+        <tr>
+          <td>000223</td>
+          <td>Home Inspection</td>
+          <td>TNT Termite</td>
+          <td>WNBC Inc.</td>
+          <td>$77.90</td>
+          <td>Approved</td>
+          <td>11/19/2015</td>
+          <td class="btn-col"><button class="btn-sml btn-bg-blue">View</button></td>
+        </tr>
+
+        <tr class="odd">
+          <td>000224</td>
+          <td>Title Stuff</td>
+          <td>TNT Termite</td>
+          <td>ABC Title</td>
+          <td>$55.11</td>
+          <td>Pending</td>
+          <td>11/23/2015</td>
+          <td class="btn-col"><button class="btn-sml btn-bg-blue">View</button></td>
+        </tr>
+
+        <tr>
+          <td>000414</td>
+          <td>Birthday Party</td>
+          <td>TNT Termite</td>
+          <td>Sally Baggins</td>
+          <td>$188.88</td>
+          <td>Paid</td>
+          <td>12/12/2015</td>
+          <td class="btn-col"><button class="btn-sml btn-bg-blue">View</button></td>
+        </tr>
+
+      </table>
+    </div>
+    <div class="pure-u-1-1">
+      <div class="pagination">
+        <div class="nav"><i class="fa fa-chevron-left"></i>&nbsp;&nbsp;&nbsp;Page </div> <div class="pg-num">1</div> <div class="nav"> of 5&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i></div>
+      </div>
+    </div>
+  </div>
 
 
       <div class="pure-u-24-24 header__title">
@@ -304,7 +487,6 @@
   </div>
 
 </div>
-  </div>
 </template>
 <template name="account_view">
   <div class="pure-g">
@@ -596,5 +778,3 @@
     </div>
 
 </template>
-
-
