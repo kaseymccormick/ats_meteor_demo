@@ -180,16 +180,16 @@ body {
 }
 
 /* HEADING TAGS */
-h1 {
-    font-family: Roboto;
-    font-size: 32px;
-    color: #616161;
-    border-bottom: 1px solid #cccccc;
-    font-weight: 300;
-    line-height: 2.74em;
-    margin: 0;
-    padding: 0;
-}
+/*h1 {*/
+    /*font-family: Roboto;*/
+
+    /*color: #616161;*/
+    /*border-bottom: 1px solid #cccccc;*/
+    /*font-weight: 300;*/
+    /*line-height: 2.74em;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
 
 h2 {
     font-family: Roboto;
