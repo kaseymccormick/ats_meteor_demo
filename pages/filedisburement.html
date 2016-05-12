@@ -1,5 +1,5 @@
 <template name="pay_file-disbursement">
-    <div class="pure-g">
+    <div class="pure-g" id="top">
         <div class="pure-u-1-1 header__title">
             <div class="pure-g">
                 <div class="pure-u-16-24">
@@ -47,7 +47,7 @@
                     <h3>Transaction Information</h3>
                     <dl>
                         <dt><b>Borrower</b></dt>
-                        <dd>Cynthia Aziz </dd>
+                        <dd>Cythia Aziz </dd>
                         <dd>123 Anywhere Street </dd>
                         <dd>Anytown, UT 23456</dd>
                         <dt><b>Borrower Settlement Agent:</b></dt>
@@ -69,6 +69,7 @@
                         <li><b>Loan ID#</b> 234567845</li>
                         <li><b>File ID#</b> 123456789</li>
                         <li><b>MIC#</b> 00033456</li>
+                        <li><b>Loan Pool ID#</b>672873</li>
                     </ul>
                     <ul class="fd-docs"> <b>Other Documents</b>
                         <li><a href="#otherAssociatedDocuments" ><u>View document table </u></a></li>
@@ -82,26 +83,27 @@
                 <div class="pure-u-4-24 disb-stats__item sale-price">
                     <b>Sale Price</b>
                     <h2>500,000.00</h2>
+                    <h5>Loan Amount:400,000</h5>
                 </div>
                 <div class="pure-u-4-24 disb-stats__item loan">
-                    <b>Loan Amount Actual</b>
-                    <h2>400,000.00</h2>
-                    <h5>Scheduled:400,000</h5>
+                    <b>Estimated Cash to Close</b>
+                    <h2>98,099.99</h2>
+                    <h5>Verified:98,099.99</h5>
                 </div>
                 <div class="pure-u-4-24 disb-stats__item ">
                     <b>Credits Actual</b>
-                    <h2>160,000</h2>
-                    <h5>Scheduled:400,000</h5>
+                    <h2>489,000</h2>
+                    <h5>Scheduled:489,000</h5>
                 </div>
                 <div class="pure-u-4-24 disb-stats__item debit">
                     <b>Debits Actual</b>
-                    <h2>160,000</h2>
-                    <h5>Scheduled:400,000</h5>
+                    <h2>0</h2>
+                    <h5>Scheduled:489,000</h5>
                 </div>
                 <div class="pure-u-4-24 disb-stats__item balance">
                     <b>Balance Actual</b>
-                    <h2>160,000</h2>
-                    <h5>Scheduled:400,000</h5>
+                    <h2>489,000</h2>
+                    <h5>Scheduled:0</h5>
                 </div>
             </div>
         </div>
@@ -743,17 +745,17 @@
             </table>
 
         </div>
-        <div class="pure-u-1-1 disb-documents">
+        <div class="pure-u-1-1 disb-documents" id="otherAssociatedDocuments">
             <div class="pure-g">
-                <div class="pure-u-1-1">
+                <div class="pure-u-1-1 mar-t-60" >
                     <h1><span>Other Associated Documents</span></h1>
                 </div>
                 <div class="pure-u-1-1">
                     <a class="btn-blue btn-sml floatR" href="/upload-doc">Upload Another Document</a>
                 </div>
                 <div class="pure-u-1-1 document-table">
-                    <div class="pure-u-1-1 left-mar-50">
-                        <table class="pure-table pure-table-horizontal vend-docs">
+                    <div class="pure-u-1-1 left-mar-50" >
+                        <table class="pure-table pure-table-horizontal vend-docs" >
                             <thead>
                             <tr>
 
