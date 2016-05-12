@@ -293,7 +293,6 @@ a {
 
 .floatR {
     float: right;
-    text-align: right;
 }
 
 
@@ -770,4 +769,30 @@ i.fa.fa-upload.fa-2x {
 
 .pad-l-10 {
   padding-left: 10px;
+}
+
+.pagination {
+  border: 1px solid #616161;
+  border-radius: 5px;
+  height: 36px;
+  max-width: 200px;
+  padding: 0px;
+  font-size: 16px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.pagination .nav {
+  margin: 0px 10px;
+  display: inline-block;
+}
+
+.pagination .pg-num {
+  width: 24px;
+  height: 24px;
+  margin: 6px 0px;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #616161;
+  line-height: 24px;
 }
